@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tss:senteContainer version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.thirdstreetsoftware.com/SenteXML-1.0 SenteXML.xsd" xmlns:tss="http://www.thirdstreetsoftware.com/SenteXML-1.0" xmlns="http://www.thirdstreetsoftware.com/SenteXML-1.0" >
+<tss:library>
+<tss:references>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1879"/>
+<tss:date type="Entry" day="16" month="4" year="2010"/>
+<tss:date type="Modification" day="13" month="3" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur: kavanin ve nizamat ve muahedat ile umuma ait mukavelat ve iradat-i seniyeyi muhtevidir.</tss:characteristic>
+<tss:characteristic name="abstractText">From the SOAS copy, I photographed the sections on public education and the gendarmerie. the latter sections provide detailed information on wages and salaries. Apparently at least two editions were printed, as the one at SOAS differs in pagination from the copies at both StaBi and HTU. The StaBi copy bears an imprint on page 13: Istanbul, Maṭbaʿa-yi ʿĀmire, 1295 (aH, i.e. 1878/79, as the volume contains laws promulgated in 1879, it must be the latter date.)&lt;br&gt;- the date of publication is obviously wrong, as the volume contains laws from the years 1877 (e.g. law on municipalities)&lt;br&gt;SOAS edition contains sections on&lt;br&gt;- constitution (ḳānūn esāsī) (1ff)&lt;br&gt;- nāfiʿa ([public] benefits) (pp.509ff) and baladiye (pp.552ff)&lt;br&gt;- &quot;vilāyāt baladiye ḳānūnu&quot; law on provincial municipalities: 570-586&lt;br&gt;- &quot;menāfiʿ-i ʿumūmiye için istimlāk-i emlāk ḳarārnāmesi&quot; (decision concerning the expropriation / appropriation for the public benefit): 593ff</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="UUID">2E0C7298-8002-413E-B24C-2845835118E9</tss:characteristic>
+<tss:characteristic name="volume">4</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="call-num">EC87.109 /77862</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="BibTeX cite tag">:DusturKavaninVeNizamatVeMuahedatIle:1872f</tss:characteristic>
+<tss:characteristic name="Signatur">EC87.109 /77862</tss:characteristic>
+<tss:characteristic name="Date Hijri">1295</tss:characteristic>
+<tss:characteristic name="EndNote reference number">775</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">SOAS</tss:characteristic>
+<tss:characteristic name="Standort">SOAS, FU Islamwissenschaft (MF)</tss:characteristic>
+<tss:characteristic name="Citation identifier">DüsturKavaninVeNizamat 1872f</tss:characteristic>
+<tss:characteristic name="URL">http://www.tufs.ac.jp/common/fs/asw/tur/htu/data/HTU0576-06/index.djvu</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Education</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Police</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">salaries</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">State schools</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">wages</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>contents SOAS</title><comment>the section on the judiciary contains supplements to the Penal Code&lt;br&gt;570-586: Law on Provincial Municipalities&lt;br&gt;593-8: expropriation of real-estate for public benefit (menāfiʿ-i ʿumūmiye)</comment><quotation></quotation><pages>2-15</pages></tss:note>
+<tss:note><title>contents StaBi: baladiya</title><comment>520 - law on the municipality in Istanbul&lt;br&gt;538 - law on provincial municipalities&lt;br&gt;553 - law on the construction and repair of miri (public buildings) and waqf buildings - 20 Raj 1294 / 19 Tam 1293&lt;br&gt;560 - law on the expropriation of real estate for the public benefit - 21 Jum I 1296 / 24 Tish II 1295</comment><quotation>ebniye-yi amīriye ve vekifiye ...&lt;br&gt;menāfiʿa-yi ʿumūmiye için istimlāk-i emlāk niẓāmnāmesi</quotation><pages>2-12</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1879%20Du%CC%88stur%20kavanin%20ve%20nizamat%20ve%20muahedat%20ile%20umuma%20ait%20mukavelat%20ve%20iradat-i%20seniyeyi%20muhtevidir%20%232.pdf</URL></tss:attachmentReference>
+<tss:attachmentReference type="PDF (Portable Document Format)"><name>PDF 2</name><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1879%20Du%CC%88stur%20kavanin%20ve%20nizamat%20ve%20muahedat%20ile%20umuma%20ait%20mukavelat%20ve%20iradat-i%20seniyeyi%20muhtevidir%20%233.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1879"/>
+<tss:date type="Entry" day="20" month="12" year="2012"/>
+<tss:date type="Modification" day="22" month="10" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur: kavanin ve nizamat ve muahedat ile umuma ait mukavelat ve iradat-i seniyeyi muhtevidir.</tss:characteristic>
+<tss:characteristic name="abstractText">From the SOAS copy, I photographed the sections on public education and the gendarmerie. the latter sections provide detailed information on wages and salaries. Apparently at least two editions were printed, as the one at SOAS differs in pagination from the copies at both StaBi and HTU. The StaBi copy bears an imprint on page 13: Istanbul, Maṭbaʿa-yi ʿĀmire, 1295 (aH, i.e. 1878/79, as the volume contains laws promulgated in 1879, it must be the latter date.)</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="UUID">C9532D63-CF0E-45D4-B1BF-99E03D5F2599</tss:characteristic>
+<tss:characteristic name="volume">4</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Signatur">Ui9190/100-4.1878</tss:characteristic>
+<tss:characteristic name="Date Hijri">1295</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">StaBi</tss:characteristic>
+<tss:characteristic name="Citation identifier">DüsturKavaninVeNizamat 1879</tss:characteristic>
+<tss:characteristic name="Standort">StaBi</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Education</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ordered</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Police</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">salaries</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">State schools</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">wages</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>contents StaBi: baladiya</title><comment>480 - law on the formation of the ministry of public works (nāfiʿa niẓāreti)&lt;br&gt;520 - law on the municipality in Istanbul&lt;br&gt;538 - law on provincial municipalities&lt;br&gt;553 - law on the construction and repair of miri (public buildings) and waqf buildings - 20 Raj 1294 / 19 Tam 1293&lt;br&gt;560 - law on the expropriation of real estate for the public benefit - 21 Jum I 1296 / 24 Tish II 1295</comment><quotation>ebniye-yi amīriye ve vekifiye ...&lt;br&gt;menāfiʿ-i ʿumūmiye için istimlāk-i emlāk niẓāmnāmesi</quotation><pages>2-12</pages></tss:note>
+<tss:note><title>contents SOAS</title><comment>the section on the judiciary contains supplements to the Penal Code&lt;br&gt;570-586: Law on Provincial Municipalities&lt;br&gt;593-8: expropriation of real-estate for public benefit (menāfiʿ-i ʿumūmiye)</comment><quotation></quotation><pages>2-15</pages></tss:note>
+<tss:note><title>StaBi: baladiyya</title><comment></comment><quotation></quotation><pages>520ff</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1879%20Du%CC%88stur%20kavanin%20ve%20nizamat%20ve%20muahedat%20ile%20umuma%20ait%20mukavelat%20ve%20iradat-i%20seniyeyi%20muhtevidir%20%234.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:dates>
+<tss:date type="Publication" year="1879"/>
+<tss:date type="Original" day="5" month="10" year="1877"/>
+<tss:date type="Entry" day="25" month="9" year="2012"/>
+<tss:date type="Modification" day="5" month="7" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">vilāyāt-i belediye ḳānūnu</tss:characteristic>
+<tss:characteristic name="publicationTitle">Düstur: kavanin ve nizamat ve muahedat ile umuma ait mukavelat ve iradat-i seniyeyi muhtevidir.</tss:characteristic>
+<tss:characteristic name="abstractText">&amp;lt;pb=&quot;538&quot;/&amp;gt;&lt;br&gt;&lt;br&gt;Art 3: responsibilities: construction of all buildings; broadening and establishment of roads; pavements and sewers; construction and repair of water conducts, both public and private [uqniyya al-māʾ al-ʿāmma wa al-khāṣṣa / ʿumūmī ve khuṣūsī ṣūyūları]; all the water issues under the responsibility of Waqfs; demolition of buildings considered dangerous by the municipality; estimations for the construction and repair of public buildings [al-kashf ʿalā al-abniyya al-amīriyya / ebniye-yi emīriye], covered by a special law; expropriation [istimlāk] of properties deemed necessary for the broadening of streets or public use [tawzīʿ al-ṭuruq wa al-manāfiʿ al-ʿāmma]; administration, exchange, repair, rent of real-estate in the property of the municipality; defence council in trials against the municipality; beautification of the town; maintenance of the property of the town the roads used for transport …; registration of all real-estate, its value, its revenues, names of proprietors, and a map of the property &lt;br&gt;&lt;br&gt;&amp;lt;pb=&quot;539&quot;/&amp;gt;&lt;br&gt;&lt;br&gt;; registration of the population; registration of births and deaths [^3]; arrangement and extension of scales; upkeep of promenades, open places, and public gardens [al-ḥadāʾiq al-mukhtaṣa bi-l-ʿumūm / ve ʿumūma meḫṣūs bāghçeleri]; means of transport; establishment and improvement of fairs (bazaars) at convenient places; elaborating tariffs for coaches for goods and people as well as mounts; the good condition of coaches and mounts and their stations at the places assigned for this purpose; &amp;lt;note&amp;gt;different order of tasks in the French and Arabic versions&amp;lt;/note&amp;gt; surveillance of everything concerning the police and public morality [al-adāb al-ʿāmma / ādāb-i ʿumūmiye]; surveillance of restaurants, cafés, casinos [qāʿāt al-malāʿib (biliyārde)], theaters, circuses, all places of public gatherings [wa kull maḥall yajtamaʿu ilayhi al-nās / ve mecmaʿ-i nās olān her bir maḥalle], promenades and bazars are supervised by the police &amp;lt;note&amp;gt;the following is not mentioned in the French translation&amp;lt;/note&amp;gt; like the work of hired carriers at docks, prohibiting the people [al-nās]  from washing [themselves] in open waters; sea baths; gangways and ferries etc; supervising the exactness of measures of weight, capacity, and length; purity, preparation, price, and weight of bread; cleanliness of ovens and workers at bakeries; prohibition of the sale of ill animals’ meat; construction of slaughterhouses at suitable locations outside the city’s interior; observation of health regulations concerning slaughterhouses and other sources of bead smells / unhealthy air; …; cleaning of all streets; public health in general; establishment of hospitals, asylums of the poor and foundlings, industrial schools, schools for blind and deaf children and orphans; care of sick among the poor, administration of existing facilities; … ; material for fighting fires and other hazards; guard for this material at special locations and nomination of personnel; furnishing work and tools to those not incapable to work in order to make begging gradually disappear ; burial of the poor; prohibition of brothels [the absence of conditions contravening public morals in places of gambling; ʿalā ʿadam wuqūʿ ḥālāt taghāyur al-adāb al-ʿumūmiyya fī maḥallāt al-alʿāb]; &amp;lt;pb=&quot;540&quot;/&amp;gt;&lt;br&gt;collection of municipal revenues and their spending on its duties; measures against fraudsters; affairs of the guilds (esnaf).&lt;br&gt;&amp;lt;pb=“549”/&amp;gt;&lt;br&gt;Chapter 7: duties of the municipal sergeants /bailiffs [jāwūsh, jāwīshiyya], Art 56-61&lt;br&gt;Art 56: &lt;br&gt;- the municipality should appoint an appropriate number of inspectors of the bailiffs, they will act as their officers. the inspector’s powers are limited to the area of the appointing municipal council [i.e. not even the whole town, if more than one municipality exists]&lt;br&gt;Art 57: &lt;br&gt;- only Ottoman subjects can be appointed. they have to be literate, of good health, and have to have a clear criminal record. among those eligible, former soldiers are to be preferred. those illiterates currently employed cannot be re-appointed and shall be replaced&lt;br&gt;&amp;lt;pb=“550”/&amp;gt;&lt;br&gt;Art 58: &lt;br&gt;- whenever a person of these qualifications is found among the sergeants, only Ottoman subjects can be appointed to the vacant post of an inspector. They have to sit an exam to attest to their literacy.&lt;br&gt;Art 59: &lt;br&gt;- the inspector and the sergeants fulfill the duties bestowed upon them by the president, they will also, in general, apply the laws and regulations. they will gather in front of the municipal council, by a tezkere, those who deviate from these requirements and will need to seek the assistance of the police. In case of an incident, they will announce it to the nearest post of the police, and will immediately gather at the location of the incident and ensure that the water carriers work actively and that any damage is prevented.&lt;br&gt;Art 60: &lt;br&gt;- inspectors and bailiffs are allowed to enter khans, bathhouses, stores, shops, theaters (*tiyātrū* / *qāʿāt al-tashkhīṣ*), casinos (*cānbāz ḫāne* / *malāʿib*), cafés and similar places, casinos (*ġāzīnū*) and all places open to the public (*al-nās*)&lt;br&gt;Art 61: &lt;br&gt;- the sergeants patrol those areas only, to which they are assigned by their officers; they conduct their duties with all decency. They are prohibited to smoke pipes or cigarettes, to hold umbrellas or canes in their hands, to engage in conversations in the streets with anyone except for conducting their duties, and to sit inside cafes for rest. &lt;br&gt;&lt;br&gt;Chapter 8: issues the municipality shall prohibit (belediyeçe memnūʿ olān eḥvāl)&lt;br&gt;&lt;br&gt;Art 62 [very long article ]: the issues which the municipalities have to prohibit are: that the public (ehālī) or passersby do not throw garbage into the streets and on the grounds; that the copper instruments in restaurants and small cooking stands are tinned; that washing, towels, burnous [coat] etc. in [public] bathhouses are not dirty; that water and sullage does not flow from the houses and stores into the streets; that chimneys are not lower than the roof-tops; that sewers and water pipes are not opened without prior authorisation from the municipality &lt;br&gt;&lt;br&gt;&amp;lt;pb=“551”/&amp;gt;&lt;br&gt;&lt;br&gt;; that sewage canals, public or private (ʿumūmī ve ḫuṣūṣī) water canals, or gas piping are to obstructed by anyone; that one does not transport without cover fresh skins on the back of pack animals; that one does not obstruct / block public roads (yol üzerinde) through pedestals, barrels, “zanbils”,  baskets, bowls, “kouffes”, boxes and crates, either empty or full; that no one leashes[?] “mangals” or storefront shutters in front of shops / magazines; that one does not extend the capacity of the shop under the pretext of displaying his merchandise; that, without a special permit from the municipality, no one places … in front of cabarets, cafés or similar places, chairs or stepladders to provide seats for the clients; and this regardless of the width of the street and even if nothing opposes this encroachment; that no one sells his merchandise or commodities/food in the streets, including erecting stalls, large pedestals, or tents; that one does not prepare “kebab” or other dishes in front of stores, on stoves or &amp;lt;pb=“82”&amp;gt; on “mangals”; that one does not use high roof gutters and pipes for the drainage of dirty pans; that one does not leave holes from wells or drains in the street, or any other objects that could prevent circulation; or that one does not transport [what?] in open containers ; that one does not slaughter sheep, oxen or buffaloes weak or sick, lambs of less than two months and calves less than four months; that one does not hunt or or sell the results of hunting between 15 August and the end of February; that one does not sell chickens, turkeys, geese, and other poultry after their chest is inflated [?]; that no one discharges meet or rotten fish, not yet rip or rotten fruits, prepared dishes or food, coffee, butter or other faulty items[^9], or bread of wrong weight or improper dough,  into the stores or the streets; that the tents of stores are less than five pics high, and that they are not left standing over night; that does not cut wood in the streets in a manner obstructing circulation; that one does not walk animals on the sidewalks; &lt;br&gt;&lt;br&gt;&amp;lt;pb=“552”&amp;gt;&lt;br&gt;that one does not race camels through the streets; that one does not lead loaded pack animals through the streets without one being tied to the other; that one does not ride loaded pack animals, or strike them; that planking and iron girders transported do not damage the pavement; that one does not transport charges at night through unlit streets; that one does not use lame, hurt or disabled pack animals; that one does not load more than 120 okka on a camel and 60 okka on healthy donkeys; that one does not store in shops or khans any objects dangerous to public health, such as fresh hides, bones, horns, rags and other objects of this kind; that one does not throw manure on the streets or at the foot of the walls; [… obstruction of roads …]; that one does not prepare or sell on pedestals (tabla) erected on the streets meatballs (kefte) and kebab; that one does not  conserve wood chips  or dray hayt, or any other inflammable material, or all other dirty objects and those endangering public health,  in bakers’ stores or Simitcis, which do not have a basement, or in any other place not allowed by the municipality; that one does not let free or walk  cows, oxen, sheep, goats or other animals through streets or in areas where the municipality does not allow it; that one does not tie sheep or other animals in front of stores; finally, that one does not bathe in the open sea.&lt;br&gt;&lt;br&gt;Chapter 9: issues the municipality shall enforce (belediyece icrāsı lāzım gelen eḥvāl)&lt;br&gt;Art 63: any construction materials for buildings shall be placed in the garden or court of this building or on a nearby location with the consent of the proprietor; if this is impossible, they can be stored in front of the construction site on an  area of one pic or large surrounded by a wooden fence. All rubble, stones etc. to be found in the street as a result of an incident, have to be immediately removed by the owners of the building; an enclosure wall or wooden fence has to be erected around the grounds. Any canals etc. opened for works, have to be closed after the work is finished and repaved; if this cannot be done within one day, the proprietor has to light the site a night with a lamp/lantern; burial pits will be dug in a manner approved by the municipal physician; abandoned wells or any other opening to be found, have to be immediately covered under the supervision of the municipality. &lt;br&gt;Butcheries have to be cleaned every day; meat is not to be stored without cover, but to be kept in cabinets on iron lattices which do not let the flies in, or they have to be covered with a fine mesh. &lt;br&gt;&lt;br&gt;&amp;lt;pb=“553”&amp;gt;&lt;br&gt;The municipalities can also care for all issues of this matter, which might be of their interest.&lt;br&gt;Art 64: Measures and weights will generally be fair and bear the official seal. The objects and foodstuffs sold by merchants [weighting] less then five okra have to be measured absolutely accurately on the scale; for larger quantities a steelyard is permissible for wighting. &lt;br&gt;&lt;br&gt;Chapter 10: penalties&lt;br&gt;Art 65: the requirements of Chapter III of the Criminal Code will be applied for transgressions of the provisions in this act and the municipal bylaws&lt;br&gt;Art 66&lt;br&gt;Art 67: the inspectors and sergeants who neglect their duties will be, on the first time, reprimanded by the municipal council; the second time, the will have to pay a fine equalling one month’s pay; the third time, they will be dismissed from the service and banned from any future service with the municipality,&lt;br&gt;END OF LAW</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="pages">538-553</tss:characteristic>
+<tss:characteristic name="publicationCountry">Istanbūl</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">5899EEE2-0D50-4E60-9D36-7FEBF0CA0C71</tss:characteristic>
+<tss:characteristic name="volume">4</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="call-num">Ui 9190/100-4.1878</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Hijri">27 Ram 1294</tss:characteristic>
+<tss:characteristic name="EndNote reference number">768</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">StaBi</tss:characteristic>
+<tss:characteristic name="Translated title">Law on Provincial Municipalities</tss:characteristic>
+<tss:characteristic name="Standort">StaBi</tss:characteristic>
+<tss:characteristic name="Citation identifier">DüsturKavaninVeNizamat 1878</tss:characteristic>
+<tss:characteristic name="URL">http://www.tufs.ac.jp/common/fs/asw/tur/htu/data/HTU0576-06/index.djvu</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Municipal government</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Police</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Propriety</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Road works</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:dates>
+<tss:date type="Publication" year="1879"/>
+<tss:date type="Original" day="15" month="5" year="1879"/>
+<tss:date type="Entry" day="6" month="8" year="2013"/>
+<tss:date type="Modification" day="5" month="7" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">menāfiʿ-i ʿumūmiye için istimlāk-i emlāk niẓāmnāmesi</tss:characteristic>
+<tss:characteristic name="publicationTitle">Düstur: kavanin ve nizamat ve muahedat ile umuma ait mukavelat ve iradat-i seniyeyi muhtevidir.</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="pages">560-565</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="status">To be reviewed</tss:characteristic>
+<tss:characteristic name="UUID">D21AE130-A7C6-47E7-ABEE-09A95D8BA952</tss:characteristic>
+<tss:characteristic name="volume">4</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Rumi">24 Tish II 1295</tss:characteristic>
+<tss:characteristic name="Date Hijri">21 Jum I 1296</tss:characteristic>
+<tss:characteristic name="EndNote reference number">1215</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">StaBi</tss:characteristic>
+<tss:characteristic name="Standort">SOAS, FU Islamwissenschaft (MF)</tss:characteristic>
+<tss:characteristic name="Citation identifier">DüsturKavaninVeNizamat 1879a</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Borrowed</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Education</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">salaries</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">State schools</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">wages</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>contents SOAS</title><comment>the section on the judiciary contains supplements to the Penal Code&lt;br&gt;570-586: Law on Provincial Municipalities&lt;br&gt;593-8: expropriation of real-estate for public benefit (menāfiʿ-i ʿumūmiye)</comment><quotation></quotation><pages>2-15</pages></tss:note>
+<tss:note><title>Art 1:</title><comment></comment><quotation>… menāfiʿ-ī ʿumūma şāmil bi-l-cümle-i ʿamaliyāt ve inşāʾāt ecrāz ... menāfiʿ-i ʿumūmiye için istimlāk iṭlāḳ olunur</quotation><pages>560</pages></tss:note>
+<tss:note><title>contents StaBi: baladiya</title><comment>&lt;br&gt;560 - law on the expropriation of real estate for the public benefit - 21 Jum I 1296 / 24 Tish II 1295</comment><quotation>ebniye-yi amīriye ve vekifiye ...&lt;br&gt;menāfiʿ-i ʿumūmiye için istimlāk-i emlāk niẓāmnāmesi</quotation><pages>2-12</pages></tss:note>
+<tss:note><title>Art 2</title><comment></comment><quotation></quotation><pages>560</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1879%20Du%CC%88stur%20kavanin%20ve%20nizamat%20ve%20muahedat%20ile%20umuma%20ait%20mukavelat%20ve%20iradat-i%20seniyeyi%20muhtevidir.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1881"/>
+<tss:date type="Entry" day="23" month="12" year="2012"/>
+<tss:date type="Modification" day="22" month="10" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Istānbūl</tss:characteristic>
+<tss:characteristic name="publisher">(Maḥmūd) Bey Maṭbaʿasi</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">13DD75B4-26ED-4C8C-A2EB-AAECDF81278E</tss:characteristic>
+<tss:characteristic name="volume">Ẕeyl 1</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Hijri">1299</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">UCB</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1881</tss:characteristic>
+<tss:characteristic name="Standort">Berkeley</tss:characteristic>
+<tss:characteristic name="URL">http://hdl.handle.net/2027/uc1.b3094983</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>law on public works commissions</title><comment></comment><quotation>umūr-i nāfiʿa ḳūmīsiyūnu niżāmnāmesi</quotation><pages>5f</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1881%20Du%CC%88stur%20Z%CC%B1eyl%201%20%232.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1881"/>
+<tss:date type="Entry" day="23" month="3" year="2012"/>
+<tss:date type="Modification" day="31" month="12" year="2013"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="abstractText">commences with the table of contents on page 53 of the digital file.</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Istānbūl</tss:characteristic>
+<tss:characteristic name="publisher">(Maḥmūd) Bey Maṭbaʿasi</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">DCB068B8-E69B-4AB4-B1D8-98776411DE30</tss:characteristic>
+<tss:characteristic name="volume">Zeyl 2</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Signatur">1220</tss:characteristic>
+<tss:characteristic name="Date Hijri">1299</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">HTU</tss:characteristic>
+<tss:characteristic name="Standort">SOAS, FU Islamwissenschaft (MF)</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1881a</tss:characteristic>
+<tss:characteristic name="URL">http://www.tufs.ac.jp/common/fs/asw/tur/htu/list1.html#d</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1881"/>
+<tss:date type="Entry" day="23" month="12" year="2012"/>
+<tss:date type="Modification" day="22" month="10" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Istānbūl</tss:characteristic>
+<tss:characteristic name="publisher">(Maḥmūd) Bey Maṭbaʿasi</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">6E605E68-AA01-4D06-9F19-8FAB2D16CD73</tss:characteristic>
+<tss:characteristic name="volume">Ẕeyl 2</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Hijri">1299</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">UCB</tss:characteristic>
+<tss:characteristic name="Standort">Berkeley</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1881b</tss:characteristic>
+<tss:characteristic name="URL">http://hdl.handle.net/2027/uc1.b3094983</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>supplement to the law concerning &quot;public buildings&quot;</title><comment></comment><quotation>ebniye-yi mīriye ve vaḳfiye inşāʾāt ve taʿmīrātı ḥaḳında olan niżāmnāmesniñ on altıncı mādesi maḳāmına ḳāyım olmaḳ üzere māde-yi niżāmiye</quotation><pages>131</pages></tss:note>
+<tss:note><title>census law</title><comment></comment><quotation>sicill-i nufūs niżāmnāmesi</quotation><pages>15ff</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1881%20Du%CC%88stur%20Z%CC%B1eyl%202.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1882"/>
+<tss:date type="Entry" day="23" month="3" year="2012"/>
+<tss:date type="Modification" day="31" month="12" year="2013"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="abstractText">The printing press is located at the Sublime Porte, at the Abū al-Saʿūd Street 72.</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">(Maḥmūd) Bey Maṭba‘asi</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">CD891D95-0E0E-48F2-9FDF-27D8A7501729</tss:characteristic>
+<tss:characteristic name="volume">Zeyl 3</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Hijri">1300</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">HTU</tss:characteristic>
+<tss:characteristic name="Standort">SOAS, FU Islamwissenschaft (MF)</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1882a</tss:characteristic>
+<tss:characteristic name="URL">http://www.tufs.ac.jp/common/fs/asw/tur/htu/list1.html#d</tss:characteristic>
+<tss:characteristic name="publicationStatus">Unknown</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Archival Periodical"/>
+<tss:dates>
+<tss:date type="Publication" year="1882"/>
+<tss:date type="Entry" day="23" month="12" year="2012"/>
+<tss:date type="Modification" day="22" month="10" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="abstractText">printed at another printing press than the copy held at SOAS</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">47F560A4-FDA4-4FE1-9A98-D1DDE095F14A</tss:characteristic>
+<tss:characteristic name="volume">Ẕeyl 3</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Hijri">1300</tss:characteristic>
+<tss:characteristic name="Web data source">HathiTrust</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">UCB</tss:characteristic>
+<tss:characteristic name="Standort">Berkeley</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1882b</tss:characteristic>
+<tss:characteristic name="URL">http://hdl.handle.net/2027/uc1.b3094983</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>provision of public health</title><comment>contains inter alia a section on municipal doctors / physicians</comment><quotation>idāre-yi ṣaḥḥiye ḳānūnu</quotation><pages>210ff</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1882%20Du%CC%88stur%20Z%CC%B1eyl%203.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:dates>
+<tss:date type="Publication" year="1882"/>
+<tss:date type="Original" day="5" month="11" year="1882"/>
+<tss:date type="Entry" day="30" month="8" year="2013"/>
+<tss:date type="Modification" day="5" month="7" year="2014"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">ebniye ḳānūnu</tss:characteristic>
+<tss:characteristic name="publicationTitle">Düstur</tss:characteristic>
+<tss:characteristic name="abstractText">printed at another printing press than the copy held at SOAS</tss:characteristic>
+<tss:characteristic name="language">Ottoman Turkish</tss:characteristic>
+<tss:characteristic name="pages">2-20</tss:characteristic>
+<tss:characteristic name="publicationCountry">Der-i Saʿādet</tss:characteristic>
+<tss:characteristic name="publisher">Maṭbaʿa-yi ʿĀmire</tss:characteristic>
+<tss:characteristic name="status">To be read</tss:characteristic>
+<tss:characteristic name="UUID">D6241AEF-ED36-4B2F-88B6-551FB65F9679</tss:characteristic>
+<tss:characteristic name="volume">Ẕeyl 3</tss:characteristic>
+<tss:characteristic name="OCLCID">81476270</tss:characteristic>
+<tss:characteristic name="RIS reference number">81476270</tss:characteristic>
+<tss:characteristic name="Short Titel">Düstur</tss:characteristic>
+<tss:characteristic name="Date Rumi">24 Tish I 1298</tss:characteristic>
+<tss:characteristic name="Date Hijri">Dhu II 1299</tss:characteristic>
+<tss:characteristic name="Web data source">HathiTrust</tss:characteristic>
+<tss:characteristic name="Series">Tertip I</tss:characteristic>
+<tss:characteristic name="Repository">UCB</tss:characteristic>
+<tss:characteristic name="Translated title">Building Code</tss:characteristic>
+<tss:characteristic name="Standort">Berkeley</tss:characteristic>
+<tss:characteristic name="Citation identifier">Düstur 1882</tss:characteristic>
+<tss:characteristic name="URL">http://hdl.handle.net/2027/uc1.b3094983</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Digital copy</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">newspaper/periodical</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman source</tss:keyword>
+<tss:keyword assigner="Sente User till">Ottoman Law</tss:keyword>
+<tss:keyword assigner="Sente User till">Source</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art 1: five categories of street widths</title><comment></comment><quotation>zuḳāḳlarıñ vüsʿati</quotation><pages>2</pages></tss:note>
+<tss:note><title>Art 5</title><comment>It is not allowed to erect buildings in the vicinity of places of worship, ports, squares for the public (ʿumūma ʿāʾid meydānlar) etc. and lands for the public benefit (menāfiʿ-i ʿāmme için) [important: public works would be menāfiʿ-i ʿumūmiye]. It is prohibited to change the width of those places.&lt;br&gt;- Art 5: it is not permitted to anyone to construct buildings in the free spaces (al-fusḥāt al-matrūka) around places of worship (al-maʿābid) and public places  (al-fusḥāt al-ʿumūmiyya), parks, and other metruke lands for public benefit (li-l-manāfiʿ al-ʿumūmiyya). and it is prohibited to change the width of those places in any aspect. and if the municipality saw the need to change existing old buildings lining those open spaces without interfering with the amount of space allocated to them, they can do so with an sanctioning imperial irade only</comment><quotation>Maʿābid ḥevelilerile iskelelerde ve ʿumūma ʿāʾid meydānlar ile mesīrelerde ve-l-ḥāṣıl menāfiʿ-i ʿāmme için terek olunmuş olan yerlerde ebniye inşāsıve bū maḥallerin her ne ṣūretle olur ise olsun ḫuṣūṣiyete taḥvīli memnūʿdur. &lt;br&gt;Ancak bu misillū mahallerin fevkalāde olarak tağyir ve tanzimine lüzum görüldüğü halde Babı āliden istizan olunacaktır.</quotation><pages>3</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/!%20Unknown%20Author(s)/1882%20Du%CC%88stur%20Z%CC%B1eyl%203%20ebniye%20k%CC%A3a%CC%84nu%CC%84nu%20%232.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="20" month="10" year="1863"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-ṭuruq wa al-abniyya</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="rating">3</tss:characteristic>
+<tss:characteristic name="status">Get Copy</tss:characteristic>
+<tss:characteristic name="UUID">6B67184A-EFF8-4FF3-B860-54E60647EC7E</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">7 Jum I 1280</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Law on Streets and Buildings</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883d</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Public works</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Road works</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>&lt;b&gt;Art 35 &lt;/b&gt;(street signs and numbers)</title><comment>- signs of street / square names, numbers of buildings facing the street, announcement of broadening works.&lt;br&gt;- house numbers have to be paid for by the owner of the house,  and be checked twice a year by the authorities&lt;br&gt;construction signs have to announce any works scheduled by the owners of houses, sign to be paid for by the owner</comment><quotation></quotation><pages>451</pages></tss:note>
+</tss:notes>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Book"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Entry" day="23" month="3" year="2012"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="abstractText">According to Lisān al-Ḥāl 959 (26 May 1887) and Thamarāt al-Funūn (30 May 1887), the second volume was published in May 1887. Nawfal Niʿmat Allāh Nawfal al-Ṭarabulusī &lt;br&gt;containing Arabic translations of the press law, such as the 1857 regulation (194-195)</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Get Copy</tss:characteristic>
+<tss:characteristic name="UUID">7045F7AC-35B7-44A0-A42D-2BBB3EB9FDE7</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">1301</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883c</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Press</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>table of contents</title><comment>156-187niẓām al-maʿārif al-ʿumūmiyya (24 Jum I 1286)&lt;br&gt;188-193niẓām al-maṭbūʿāt (2 Shaʿ 1281 / 19 Kan I 1280)&lt;br&gt;194-195 niẓām al-maṭābiʿ (20 Jum 1273)&lt;br&gt;196niẓām ṭabaʿ al-kutub (8 Raj 1289 / 30 Agh 1288)&lt;br&gt;197fiqrāt niẓāmiyya madhaliyya ʿala niẓām ṭabaʿ al-kutub&lt;br&gt;&lt;br&gt;240-256niẓām duwar al-iṣlāḥ fī al-wilāyāt&lt;br&gt;&lt;br&gt;261-267 niẓām al-ṭuruq wa al-maʿābir (18 Jum I 1286)&lt;br&gt;268-274taʿlīmāt ʿumūmiyya takhtaṣṣa bi-ṣūrat ʿamaliyya al-ṭuruq wa al-maʿābir wa idāratihā fī al-mamālik al-maḥrūsā al-shāhāniyya (18 Jum I 1286) &lt;br&gt;- concerned with the particularities of the works, officials, etc. &lt;br&gt;275niẓām al-maʿādin&lt;br&gt;294-295 niẓām al-imlāk allatī tashtarī li-ajlī al-manāfiʿ al-ʿumūmiyya (4 Raj 1272)&lt;br&gt;296niẓām uṣūl ḍābiṭat ṭuruḳ al-ḥadīd&lt;br&gt;&lt;br&gt;niẓāmāt al-idāra al-baladiyya&lt;br&gt;405niẓām al-dāʾira al-baladiyya al-sādisa [for Istanbul]&lt;br&gt;421-432niẓām al-shawāriʿ [toc] / niẓām al-aziqqa [concerned with the streets of Istanbul]&lt;br&gt;433taʿlīmāt tartīb al-majlis al-baladiyya fī al-wilāyāt&lt;br&gt;436taʿlīmāt waẓāʾif al-dawāʾir al-baladiyya fi al-wilāyāt (23 Rab I 1284)&lt;br&gt;439niẓām rusūm al-ḥayawānāt [khāss bi-istanbūl]&lt;br&gt;441-456niẓām al-ṭuruq wa-l-abniyya (7 Jum I 1280)&lt;br&gt;457-462niẓām kharaj wa rusūmāt al-abniyya (no date)&lt;br&gt;463-467niẓām waẓāʾif maʾmūrī al-abniyya&lt;br&gt;470-475niẓām al-khabbāza (13 Rab II 1278 / 30 Ḥaz 1286)&lt;br&gt;476niẓām mawāqiʿ iʿānat al-gharqī (24 Raj 1287 / 7 Tish I 1286)&lt;br&gt;478niẓām al-rakkāt al-baḥriyya () (for Istanbul)&lt;br&gt;480niẓām waẓāʾif wa jāwīshiyya al-baladiyya [toc]/ taʿlīmāt bi-khuṣūṣ waẓāʾif jāwīshiyya al-dawāʾir al-baladiyya (15 Dhu I 1287 / 24 Kan II 1286) &lt;br&gt;&lt;br&gt;&lt;br&gt;726niẓām al-ṭabbābat al-baladiyya (7 Rab II 1278)&lt;br&gt;729-735niẓām al-ijzāʾiyyat al-baladiyya (22 Raj 1277)&lt;br&gt;- both laws state that one cannot practice medicine or pharmacy without holding a proper degree form an Ottoman medical college or a foreign university</comment><quotation></quotation><pages>a</pages></tss:note>
+<tss:note><title>&lt;b&gt;1857, 16 Jan:  &lt;/b&gt;&lt;i&gt;&lt;b&gt;maṭbaʿa niẓāmnāmesidir&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/b&gt;</title><comment></comment><quotation></quotation><pages>194-195</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%84%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.rtf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="31" month="12" year="1864"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-maṭbūʿāt</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">33AD9BB7-219F-4ED4-B0B3-AD1E49DE672F</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">19 Kan I 1280</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">2 Shaʿ 1281</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883e</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Press</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art 14</title><comment>any owner of a newspaper who writes something contravening public morals (shayʾan mughāyiran li-l-adāb al-ʿumūmiyya aw maḥāsin al-akhlāq al-maḥalliyya), or who insulted one of the many cults / religions (adyān aw madhāhib) in the empire, is liable to a payment of £T 1-25 at Ps 100 or imprisonment from one week to three months.</comment><quotation></quotation><pages>190</pages></tss:note>
+</tss:notes>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="16" month="1" year="1857"/>
+<tss:date type="Entry" day="24" month="2" year="2014"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-maṭābiʿ</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">194-195</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">21FEC602-C139-407C-AC64-69501EDDFB39</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">20 Jum I 1273</tss:characteristic>
+<tss:characteristic name="Orig.Title">maṭbaʿa niẓāmnāmesi</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Law on Printing Presses</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883i</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Press</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">printing</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="26" month="8" year="1869"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-ṭuruq wa al-maʿābir</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">261-267</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">0457860B-D71B-448A-9EFB-CDD3AFC55E07</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">18 Jum I 1286</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Law on Roads and Buildings</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883f</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">coercion</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">forced labour</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Press</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Road works</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>&lt;b&gt;Art 9&lt;/b&gt;: extend of works</title><comment>- a day's work is at least 9 pics of pavement (turāb) lining the sides of the streets, or 2,5 pics of road works (taking the stones and breaking them up and lying them on the street)&lt;br&gt;- a day's work of a beast of burden is to transport the whole stones from the warehouse/ quarry to the construction site.</comment><quotation></quotation><pages>263</pages></tss:note>
+<tss:note><title>Art 8</title><comment>- liable inhabitants are established by census. everyone has to serve 20 days in five years or pay an exemption fee.&lt;br&gt;- beasts of burden</comment><quotation></quotation><pages>262-263</pages></tss:note>
+<tss:note><title>Art 14</title><comment>- at the end of five years every settlement has to prepare accounts of the days of corvéed labour actually worked. if it differs from the legally allotted number of days, the inhabitants (ahālī) have the right / duty to compensate the numbers during the next five years</comment><quotation></quotation><pages>264</pages></tss:note>
+<tss:note><title>Art 1</title><comment>Art 1: the law is concerned with the roads in the empire. the highest class are the roads from the provincial capitals to Istanbul.&lt;br&gt;[apparently the law is only concerned with the roads outside of any settlement]</comment><quotation></quotation><pages>261</pages></tss:note>
+<tss:note><title>&lt;b&gt;Art 7: &lt;/b&gt;corvée labour in cities,  towns, and villages</title><comment>those in the age of manual labour (fī sinn al-aʿmāl) are liable to crovée for road works, they can either work themselves, pay an exemption fee, or provide beasts of burden</comment><quotation></quotation><pages>262</pages></tss:note>
+<tss:note><title>Art 11</title><comment>- extend of works and scheduled dates are established annually by the council of the sancak</comment><quotation></quotation><pages>263</pages></tss:note>
+<tss:note><title>Art 15</title><comment>- cities, towns, or villages cannot order road works at locations more than 12 hours' distance, but by special order from the Sublime Porte</comment><quotation></quotation><pages>264</pages></tss:note>
+<tss:note><title>Art 10</title><comment>- certain people are exempt from the works: clergy, rabbis, teachers at schools (makātib wa madāris), soldiers and gendarmes under arms</comment><quotation></quotation><pages>263</pages></tss:note>
+</tss:notes>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="10" month="3" year="1856"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-amlāk allatī tashtarī li-ajlī al-manāfiʿ al-ʿumūmiyya</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">294-295</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">56F93264-6A4E-407A-81E5-BE5EC995C4AC</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">4 Raj 1272</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883g</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">expropriations</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art 1: definition of public works / manāfiʿ ʿumūmiyya</title><comment></comment><quotation>al-ashiyāʾ al-shāmila li-l-manāfiʿ al-ʿumūmiyya … tawsīʿ al-ṭuruq</quotation><pages>294</pages></tss:note>
+</tss:notes>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" year="1867"/>
+<tss:date type="Entry" day="8" month="8" year="2014"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">taʿlīmāt tartīb al-majlis al-baladiyya fī al-wilāyāt</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="abstractText">According to Sharif 2014:46, the law was called &quot;Ṣūrat tartīb majālis al-dawāʾir al-baladiyya al-latī tatashakkal fī almudun wa-l-qaṣabāt dākhil al-wilāya wa-waẓāʾif maʾmūrīha&quot;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">433-</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Get Copy</tss:characteristic>
+<tss:characteristic name="UUID">C9CC6E32-FE91-40C1-8CC5-3816BF76289E</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Formation of Municipal Councils in the Provinces</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883l</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Municipal government</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">order/library</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Entry" day="8" month="8" year="2014"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">taʿlīmāt waẓāʾif al-dawāʾir al-baladiyya fi al-wilāyāt</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">436-</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Get Copy</tss:characteristic>
+<tss:characteristic name="UUID">8501C1F4-BB2A-47D9-AD19-4C1B0DE55479</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">23 Rab I 1284</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Tasks of Municipal Councils in the Provinces</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883m</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Municipal government</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">order/library</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+</tss:keywords>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1883"/>
+<tss:date type="Original" day="11" month="7" year="1870"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-khabbāza</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">470-475</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="rating">3</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">F92BC422-2948-4F27-9610-BC2498CD0DDE</tss:characteristic>
+<tss:characteristic name="volume">2</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">30 Ḥaz 1286</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">13 Rab II 1278</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Law on Bakeries</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883h</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">food</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Market inspector</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art 3</title><comment>ovens that shall be turned into a bakery of bread, need to apply to the baladiyya, quite expensive</comment><quotation></quotation><pages>470</pages></tss:note>
+<tss:note><title>Art 4</title><comment>those ovens which do not commence work within two months of obtaining the permit to bake bread, will be punished.</comment><quotation></quotation><pages>470</pages></tss:note>
+<tss:note><title>Art 2</title><comment>all those engaged in the bread trade equally need a permit from the baladiyya and have one month to obtain one from the announcement of this law. the permit costs between Ps 50-100 according to the means of the applicant</comment><quotation></quotation><pages>470</pages></tss:note>
+<tss:note><title>Art 1</title><comment>everyone running a bakery (khabbāza) needs a permit from the baladiyya</comment><quotation></quotation><pages>470</pages></tss:note>
+</tss:notes>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1885"/>
+<tss:date type="Original" day="21" month="4" year="1858"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">Qānūn al-Arāḍī wa dhayilī</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="abstractText">Nawfal's translation follows Naqqāsh's. The wording is lightly different.</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">14-43</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">To be read</tss:characteristic>
+<tss:characteristic name="UUID">05A345DB-0577-44B2-8E90-7EB542A859F6</tss:characteristic>
+<tss:characteristic name="volume">1</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.1; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">1301</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">7 Ram 1274</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Land Code and its Supplement</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883a</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">order/library</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art 5</title><comment>- metrūke lands are of two types. The first are those metruke lands for the entirety of people (li-ajli ʿumūm al-nās). these are general / public roads (al-ṭarīq al-ʿāmm). The second type are metrūke lands &quot;belonging&quot; to all inhabitants of a village (al-makhṣūṣa ilā ʿumūm ahālī al-qariyya) or a town, or villages or towns. These are the pastures that belong to the inhabitants of villages or towns.</comment><quotation></quotation><pages>16</pages></tss:note>
+<tss:note><title>Art 5</title><comment>- metrūke lands are of two types. The first are those metruke lands for the entirety of people (li-ajli ʿumūm al-nās). these are general / public roads (al-ṭarīq al-ʿāmm). The second type are metrūke lands &quot;belonging&quot; to all inhabitants of a village (al-makhṣūṣa ilā ʿumūm ahālī al-qariyya) or a town, or villages or towns. These are the pastures that belong to the inhabitants of villages or towns.</comment><quotation></quotation><pages>15</pages></tss:note>
+<tss:note><title>Art. 96</title><comment>places used for gatherings of all people / the public (makhṣūṣan mundhu al-qadīm ilā majmūʿ ʿumūm ahālī) of a village since the old ages, cannot be built over with any building, cannot be sold, and cannot be registered</comment><quotation></quotation><pages>35</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%84%20al-%CA%BFarabiyya%20Nawfal%20Na%CA%BFmat%20Alla%CC%84h%20N%20%232.rtf</URL></tss:attachmentReference>
+<tss:attachmentReference type="Portable Document Format (PDF)"><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1885%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Na%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Book"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1885"/>
+<tss:date type="Entry" day="20" month="3" year="2012"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="publicationTitle">al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya</tss:characteristic>
+<tss:characteristic name="abstractText">According to Lisān al-Ḥāl 959 (26 May 1887) and Thamarāt al-Funūn (30 May 1887), the second volume was published in May 1887. Nawfal Niʿmat Allāh Nawfal al-Ṭarabulusī, according to the frontispiece, he had been the bashkātib of the customs in ʿArabistān. Khalīl Efendi al-Khūrī  was the director of publications in the province.&lt;br&gt;AUB owns at least three (sic) copies of the first volume (349.56 T93dA v.1 c.1; 349.56 T93dA v.1 c.2; and CA 349.56:T93dA:v.1).&lt;br&gt;The University of Indiana's copy is available from HathTrust, with the scan missing some pages: 74-75, 161, 178-179, 224-227, 426-427, 448-449, 528-529, 550-551, 554-555 &lt;br&gt;commences with the imperial decree promulgating the tanzimat reforms, 26 Shaʿ 1255 [4 Nov 1839]&lt;br&gt;&lt;br&gt;2-4khaṭṭ al-humāyūn (26 Shaʿ 1255) [4 Nov 1839]&lt;br&gt;14-44 qānūn al-arāḍī wa dhayluhu&lt;br&gt;44-51niẓām al-ṭābū wa dhayluhu&lt;br&gt;68-72niẓām istimlāk al-tabaʿa al-ajnabiyya li-l-imlāk&lt;br&gt;323-373niẓām al-jizāʾ al-humāyūnī&lt;br&gt;397-niẓam idāra al-wilāya al-ʿumūmiyya</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">4BDAAF40-9DDF-413D-B7BB-51C514552637</tss:characteristic>
+<tss:characteristic name="volume">1</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.1 / c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">1301</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="EndNote reference number">4</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883</tss:characteristic>
+<tss:characteristic name="URL">http://hdl.handle.net/2027/inu.30000088981760</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Constitution</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">make scan</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+</tss:keywords>
+<tss:attachments>
+<tss:attachmentReference><URL>http://library.aub.edu.lb/record=b1245524~S1</URL></tss:attachmentReference>
+<tss:attachmentReference><URL>http://library.aub.edu.lb/search</URL></tss:attachmentReference>
+<tss:attachmentReference><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.rtf</URL></tss:attachmentReference>
+<tss:attachmentReference><name>contents</name><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.pdf</URL></tss:attachmentReference>
+<tss:attachmentReference><name>AUB copy: contents</name><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi%20%232.pdf</URL></tss:attachmentReference>
+<tss:attachmentReference type="Portable Document Format (PDF)"><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1883%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi%20%233.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Translator"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1885"/>
+<tss:date type="Original" day="9" month="7" year="1858"/>
+<tss:date type="Entry" day="16" month="9" year="2013"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām al-jizāʾ al-humāyūnī</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="abstractText">373 Art 260, Penal Code&lt;br&gt;- those who disturb the tranquility of the inhabitants or tear down placards posted by order of the authorities will be punished with a payment of 10-15 Beshliks [and 3 days to one week in prison; this is not mentioned in this translation]&lt;br&gt;- Art 261: missing!</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">323-373</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">Reviewed</tss:characteristic>
+<tss:characteristic name="UUID">F5462F9F-DF07-413A-997D-0DF510694DCC</tss:characteristic>
+<tss:characteristic name="volume">1</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">1301</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">28 Dhu 1274</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Translated title">Imperial Penal Code</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883b</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">make scan</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User XSLT">referenced: PhD thesis</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art. 260</title><comment>those who disturb the tranquility of the inhabitants (rāḥar al-ahālī) or tear down placards posted by order of the authorities will be punished with a payment of 10-15 Beshliks [and 3 days to one week in prison; this is not mentioned in this translation]</comment><quotation></quotation><pages>373</pages></tss:note>
+<tss:note><title>Art 262</title><comment></comment><quotation></quotation><pages>373</pages></tss:note>
+<tss:note><title>Art. 261: missing</title><comment></comment><quotation></quotation><pages>373</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference type="Portable Document Format (PDF)"><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1885%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%81%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1885"/>
+<tss:date type="Original" day="21" month="1" year="1871"/>
+<tss:date type="Entry" day="13" month="8" year="2014"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">Niẓām al-wilāyāt</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">382-396</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">To be read</tss:characteristic>
+<tss:characteristic name="UUID">91799FE1-F2FD-4ECC-A310-CE97ACCEBBFF</tss:characteristic>
+<tss:characteristic name="volume">1</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.1 / c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">1301</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">29 Shaw 1287</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883k</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Constitution</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">make scan</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">provincial administration</tss:keyword>
+</tss:keywords>
+<tss:notes>
+<tss:note><title>Art. 3: kazas</title><comment>Every sancak is divided into kazas, which all have a single kaimakamiye / Ḳāʾimaḳāmiyya which is located in the main town (qaṣba)</comment><quotation></quotation><pages>382</pages></tss:note>
+<tss:note><title>Art. 4: villages / qurā</title><comment>Kazas are divided into villages / qurā, administered by a municipality (baladiyya)</comment><quotation></quotation><pages>382</pages></tss:note>
+<tss:note><title>Art. 1 centralised government</title><comment>the administration of the province is centralised and located at a single centre</comment><quotation></quotation><pages>382</pages></tss:note>
+<tss:note><title>Preamble</title><comment>The divisions of the Ottoman Empire are called vilayet</comment><quotation></quotation><pages>382</pages></tss:note>
+<tss:note><title>Art. 5: division of cities</title><comment>towns and cities are divided into units of 50 households (bayt). These units form quarters (maḥallas) and are considered as villages in the sense of this law</comment><quotation></quotation><pages>382</pages></tss:note>
+<tss:note><title>Art. 2: sancaks</title><comment>The administration of a district (sancak) is located inside the very district and at its central city. It is called the mutaṣarrifiyya</comment><quotation></quotation><pages>382</pages></tss:note>
+</tss:notes>
+<tss:attachments>
+<tss:attachmentReference type="Portable Document Format (PDF)"><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1885%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%84%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+<tss:reference>
+<tss:publicationType name="Bill"/>
+<tss:authors>
+<tss:author role="Author"><tss:surname>Nawfal</tss:surname><tss:forenames>Nawfal Efendi Niʿmat Allāh</tss:forenames><tss:initials></tss:initials></tss:author>
+<tss:author role="Editor"><tss:surname>al-Khūrī</tss:surname><tss:forenames>Khalīl Efendi</tss:forenames><tss:initials></tss:initials></tss:author>
+</tss:authors>
+<tss:dates>
+<tss:date type="Publication" year="1885"/>
+<tss:date type="Original" day="21" month="1" year="1871"/>
+<tss:date type="Entry" day="13" month="8" year="2014"/>
+<tss:date type="Modification" day="13" month="7" year="2015"/>
+</tss:dates>
+<tss:characteristics>
+<tss:characteristic name="articleTitle">niẓām idārat al-wilāyat al-ʿumūmiyya</tss:characteristic>
+<tss:characteristic name="publicationTitle">&lt;b&gt;al-Dustūr: tarjamahu min al-lughat al-turkiyya ilā al-ʿarabiyya Nawfal Niʿmat Allāh Nawfal bāshkātib kamāruk ʿArabistān sābiqan; bi-murājaʿa wa tadqīq Khalīl al-Khūrī mudīr maṭbūʿāt wilāyat Sūriyya&lt;/b&gt;</tss:characteristic>
+<tss:characteristic name="language">Arabic</tss:characteristic>
+<tss:characteristic name="pages">397-421</tss:characteristic>
+<tss:characteristic name="publicationCountry">Bayrūt</tss:characteristic>
+<tss:characteristic name="publisher">al-Maṭbaʿa al-Adabiyya</tss:characteristic>
+<tss:characteristic name="status">To be read</tss:characteristic>
+<tss:characteristic name="UUID">8A24E130-868F-470E-BFEC-E98834C7A0F8</tss:characteristic>
+<tss:characteristic name="volume">1</tss:characteristic>
+<tss:characteristic name="OCLCID">11351292</tss:characteristic>
+<tss:characteristic name="RIS reference number">11351292</tss:characteristic>
+<tss:characteristic name="call-num">J 349.56:T93dA:v.1:c.1 / c.2; CA 349.56:T93dA:v.1 / v.2, Or. Fiche 378</tss:characteristic>
+<tss:characteristic name="Short Titel">al-Dustūr: Tarajama min al-Lughat al-Turkiyya</tss:characteristic>
+<tss:characteristic name="Date Rumi">1301</tss:characteristic>
+<tss:characteristic name="Shortened title">al-Dustūr</tss:characteristic>
+<tss:characteristic name="Date Hijri">29 Shaw 1287</tss:characteristic>
+<tss:characteristic name="Web data source">WorldCat</tss:characteristic>
+<tss:characteristic name="Repository">AUB</tss:characteristic>
+<tss:characteristic name="Primary contributor role">Author</tss:characteristic>
+<tss:characteristic name="Citation identifier">Nawfal 1883j</tss:characteristic>
+<tss:characteristic name="Standort">AUB, British Library</tss:characteristic>
+<tss:characteristic name="publicationStatus">Published</tss:characteristic>
+</tss:characteristics>
+<tss:keywords>
+<tss:keyword assigner="Sente User Sebastian">Constitution</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Legal text</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">make scan</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">official records</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Online</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">Ottoman Empire</tss:keyword>
+<tss:keyword assigner="Sente User Sebastian">provincial administration</tss:keyword>
+</tss:keywords>
+<tss:attachments>
+<tss:attachmentReference type="Portable Document Format (PDF)"><URL>file:///BachUni/SelfSyncingLibraries/SenteLibrary/BachBibliographie.sente6lib/Contents/Attachments/Nawfal%2C%20Nawfal%20Efendi%20Ni%CA%BFmat%20Alla%CC%84h/1885%20al-Dustu%CC%84r%20tarjamahu%20min%20al-lughat%20al-turkiyya%20ila%CC%84%20al-%CA%BFarabiyya%20Nawfal%20Ni%CA%BFmat%20Alla%CC%84h%20Nawfal%3B%20bi%20%232.pdf</URL></tss:attachmentReference>
+</tss:attachments>
+</tss:reference>
+</tss:references>
+</tss:library>
+</tss:senteContainer>
