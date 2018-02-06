@@ -34,7 +34,9 @@
                         <xsl:apply-templates
                             select="$p_input//tss:characteristic[@name='publicationTitle']"/>
                         <xsl:call-template name="t_idno"/>
-                        <xsl:call-template name="t_imprint"/>
+                        <xsl:call-template name="t_imprint">
+                            <xsl:with-param name="p_input" select="$p_input"/>
+                        </xsl:call-template>
                     </xsl:element>
                 </xsl:when>
                 <!-- the proposal of the TEI Correspondence SIG for letters could be implemented here -->
@@ -84,7 +86,10 @@
                         <xsl:apply-templates
                             select="$p_input//tss:characteristic[@name='publicationTitle']"/>
                         <xsl:apply-templates select="$p_input//tss:characteristic[@name='articleTitle']"/>
-                        <xsl:call-template name="t_imprint"/>
+                        <xsl:call-template name="t_idno"/>
+                        <xsl:call-template name="t_imprint">
+                            <xsl:with-param name="p_input" select="$p_input"/>
+                        </xsl:call-template>
                     </xsl:element>
                 </xsl:otherwise>
             </xsl:choose>
@@ -126,15 +131,16 @@
     </xsl:template>
     <!-- Imprint -->
     <xsl:template name="t_imprint">
+        <xsl:param name="p_input"/>
         <xsl:element name="tei:imprint">
-            <xsl:apply-templates select=".//tss:characteristic[@name='publisher']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='publicationCountry']"/>
-            <xsl:apply-templates select=".//tss:date[@type='Publication']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='Date Hijri']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='Date Rumi']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='volume']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='issue']"/>
-            <xsl:apply-templates select=".//tss:characteristic[@name='pages']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='publisher']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='publicationCountry']"/>
+            <xsl:apply-templates select="$p_input//tss:date[@type='Publication']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='Date Hijri']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='Date Rumi']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='volume']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='issue']"/>
+            <xsl:apply-templates select="$p_input//tss:characteristic[@name='pages']"/>
         </xsl:element>
     </xsl:template>
 
