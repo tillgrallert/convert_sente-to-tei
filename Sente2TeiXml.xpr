@@ -141,7 +141,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}</String>
+                                    <String>${pdu}/xslt/convert_sente-to-tei-output_single-file.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -198,7 +198,93 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>Sente2TEI: listBibl</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xslt/convert_sente-to-tei-output_listBibl.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -214,18 +300,7 @@
         <folder masterFiles="true" name="Master Files">
             <file name="Sente2TeiXml/Sente2TeiXml%20templates%20v3c.xsl"/>
         </folder>
-        <file name="Sente2TeiXml/Sente2Tei%20extract%20persName%20v1.xsl"/>
-        <file name="Sente2TeiXml/Sente2Tei%20extract%20placeName%20v1.xsl"/>
-        <file name="Sente2TeiXml/Sente2Tei%20persName%20NER%20v1.xsl"/>
-        <file name="Sente2TeiXml/Sente2Tei%20persName%20v4.xsl"/>
-        <file name="Sente2TeiXml/Sente2Tei-groupByTitle.xsl"/>
-        <file name="Sente2TeiXml/Sente2TeiXml%20multipleFile%20v3.xsl"/>
-        <file name="Sente2TeiXml/Sente2TeiXml%20Repositories.xsl"/>
-        <file name="Sente2TeiXml/Sente2TeiXml%20singleFile%20v3.xsl"/>
-        <file name="Sente2TeiXml/Sente2TeiXml%20singleFile%20v3a.xsl"/>
-        <file name="Sente2TeiXml/Sente2TeiXml%20templates%20v3c.xsl"/>
-        <file name="Sente2TeiXml/SenteNotes2TeiTable%20v1.xsl"/>
-        <file name="Sente2TeiXml/SenteReferences2Tei%20v1.xsl"/>
-        <file name="Sente2TeiXml/Tei2SenteXml%20v1.xsl"/>
+        <folder path="examples/"/>
+        <folder path="xslt/"/>
     </projectTree>
 </project>
