@@ -7,7 +7,10 @@
 
     <!-- this stylesheet produces a single TEI file containing a single listBibl with biblStruct children from a Sente XML -->
 
-    <!-- to do: include facisimiles for the case of periodicals with one file per page as attachments -->
+    <!-- to do: 
+        include facisimiles for the case of periodicals with one file per page as attachments
+        find a way to keep URLs to digital representations
+        a revisionDesc is needed -->
     <xsl:include href="templates_sente-to-tei.xsl"/>
     
     <xsl:param name="p_flip-volume-and-issue" select="false()"/>
