@@ -9,7 +9,10 @@
 
     <!-- this stylesheet provides various templates for the conversion of SenteXML to TEI biblStruct elements -->
 
-    <!-- v3c: added a validation for dates. As the use of @type on <biblScope> has been depreciated, I moved everything to @unit -->
+    <!-- to do: 
+        include facisimiles for the case of periodicals with one file per page as attachments
+        find a way to keep URLs to digital representations
+        a revisionDesc is needed -->
 
     <xsl:include href="../../../xslt-functions/functions_core.xsl"/>
 
