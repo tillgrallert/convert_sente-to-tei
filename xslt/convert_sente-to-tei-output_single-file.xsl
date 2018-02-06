@@ -11,7 +11,7 @@
     <!-- to do: include facisimiles for the case of periodicals with one file per page as attachments -->
 
     <!-- v3a: using the Punch example from the Oxford summer school, I decided for a different organisation of multi-volume information -->
-    <xsl:include href="Sente2TeiXml%20templates%20v3c.xsl"/>
+    <xsl:include href="templates_sente-to-tei.xsl"/>
     
 
     <!-- Correct structure for the autput, sorting of elements -->
@@ -19,10 +19,10 @@
         <!-- this variable only works reliably for archival artifacts -->
         <xsl:variable name="vFileName">
             <xsl:value-of
-                select="concat(.//tss:reference[1]//tss:characteristic[@name='Repository'],' ',replace(.//tss:reference[1]//tss:characteristic[@name='Signatur'],'/','-'),'uuid_',replace(.//tss:characteristic[@name='UUID'],'-','_'))"
+                select="concat(tss:reference[1]//tss:characteristic[@name='Repository'],' ',replace(tss:reference[1]//tss:characteristic[@name='Signatur'],'/','-'),'uuid_',replace(tss:reference[1]//tss:characteristic[@name='UUID'],'-','_'))"
             />
         </xsl:variable>
-        <xsl:result-document href="output/{$vFileName}.TEIP5.xml">
+        <xsl:result-document href="_output/{$vFileName}.TEIP5.xml">
             <xsl:element name="tei:TEI">
                 <xsl:call-template name="templTeiHeader"/>
                 <!-- tFacsimile necessitates the use of mGlobal further down the line -->
