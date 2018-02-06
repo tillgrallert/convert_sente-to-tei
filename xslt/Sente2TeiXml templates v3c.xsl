@@ -11,7 +11,7 @@
 
     <!-- v3c: added a validation for dates. As the use of @type on <biblScope> has been depreciated, I moved everything to @unit -->
 
-    <xsl:include href="../Functions/BachFunctions%20v3.xsl"/>
+    <xsl:include href="../../../xslt-functions/functions_core.xsl"/>
 
     <!-- add @xml:lang -->
     <!-- constructing the individual biblStruct -->
@@ -149,7 +149,7 @@
     <!-- Pages -->
     <xsl:template match="tss:characteristic[@name='pages']">
         <xsl:element name="tei:biblScope">
-            <xsl:attribute name="unit">pp</xsl:attribute>
+            <xsl:attribute name="unit" select="'page'"/>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
@@ -161,10 +161,10 @@
             <xsl:choose>
                 <xsl:when
                     test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
-                    <xsl:attribute name="unit">issue</xsl:attribute>
+                    <xsl:attribute name="unit" select="'issue'"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="unit">vol</xsl:attribute>
+                    <xsl:attribute name="unit" select="'volume'"/>
                 </xsl:otherwise>
             </xsl:choose>
             <!--<xsl:attribute name="unit">vol</xsl:attribute>-->
@@ -179,13 +179,12 @@
             <xsl:choose>
                 <xsl:when
                     test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
-                    <xsl:attribute name="unit">vol</xsl:attribute>
+                    <xsl:attribute name="unit" select="'volume'"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="unit">issue</xsl:attribute>
+                    <xsl:attribute name="unit" select="'issue'"/>
                 </xsl:otherwise>
             </xsl:choose>
-           <!-- <xsl:attribute name="unit">issue</xsl:attribute>-->
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>

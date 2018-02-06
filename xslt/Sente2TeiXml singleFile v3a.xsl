@@ -11,8 +11,6 @@
     <!-- to do: include facisimiles for the case of periodicals with one file per page as attachments -->
 
     <!-- v3a: using the Punch example from the Oxford summer school, I decided for a different organisation of multi-volume information -->
-
- <!--   <xsl:include href="../Functions/BachFunctions v3.xsl"/>-->
     <xsl:include href="Sente2TeiXml%20templates%20v3c.xsl"/>
     
 
