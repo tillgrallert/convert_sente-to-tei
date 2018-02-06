@@ -15,21 +15,23 @@
 
     <!-- add @xml:lang -->
     <!-- constructing the individual biblStruct -->
-    <xsl:template name="templBiblStruct">
+    <xsl:template name="t_biblStruct">
+        <xsl:param name="p_input"/>
         <xsl:element name="tei:biblStruct">
             <xsl:call-template name="templLang"/>
             <xsl:choose>
                 <xsl:when
-                    test=".//tss:publicationType[@name='Newspaper article'] or .//tss:publicationType[@name='Archival Periodical Article']">
+                    test="$p_input//tss:publicationType[@name='Newspaper article'] or $p_input//tss:publicationType[@name='Archival Periodical Article']">
                     <xsl:element name="tei:analytic">
-                        <xsl:apply-templates select=".//tss:author[@role='Author']"/>
-                        <xsl:apply-templates select=".//tss:characteristic[@name='articleTitle']"/>
+                        <xsl:apply-templates select="$p_input//tss:author[@role='Author']"/>
+                        <xsl:apply-templates select="$p_input//tss:characteristic[@name='articleTitle']"/>
                     </xsl:element>
                     <xsl:element name="tei:monogr">
-                        <xsl:apply-templates select=".//tss:author[@role='Editor']"/>
+                        <xsl:apply-templates select="$p_input//tss:author[@role='Editor']"/>
                         <xsl:apply-templates
-                            select=".//tss:characteristic[@name='publicationTitle']"/>
-                        <xsl:call-template name="templImprint"/>
+                            select="$p_input//tss:characteristic[@name='publicationTitle']"/>
+                        <xsl:call-template name="t_idno"/>
+                        <xsl:call-template name="t_imprint"/>
                     </xsl:element>
                 </xsl:when>
                 <!-- the proposal of the TEI Correspondence SIG for letters could be implemented here -->
@@ -73,17 +75,16 @@
 
                 <xsl:otherwise>
                     <xsl:element name="tei:monogr">
-                        <xsl:apply-templates select=".//tss:author[@role='Author']"/>
-                        <xsl:apply-templates select=".//tss:author[@role='Editor']"/>
-                        <xsl:apply-templates select=".//tss:characteristic[@name='Recipient']"/>
+                        <xsl:apply-templates select="$p_input//tss:author[@role='Author']"/>
+                        <xsl:apply-templates select="$p_input//tss:author[@role='Editor']"/>
+                        <xsl:apply-templates select="$p_input//tss:characteristic[@name='Recipient']"/>
                         <xsl:apply-templates
-                            select=".//tss:characteristic[@name='publicationTitle']"/>
-                        <xsl:apply-templates select=".//tss:characteristic[@name='articleTitle']"/>
-                        <xsl:call-template name="templImprint"/>
+                            select="$p_input//tss:characteristic[@name='publicationTitle']"/>
+                        <xsl:apply-templates select="$p_input//tss:characteristic[@name='articleTitle']"/>
+                        <xsl:call-template name="t_imprint"/>
                     </xsl:element>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:call-template name="templId"/>
         </xsl:element>
     </xsl:template>
 
@@ -121,7 +122,7 @@
         </xsl:element>
     </xsl:template>
     <!-- Imprint -->
-    <xsl:template name="templImprint">
+    <xsl:template name="t_imprint">
         <xsl:element name="tei:imprint">
             <xsl:apply-templates select=".//tss:characteristic[@name='publisher']"/>
             <xsl:apply-templates select=".//tss:characteristic[@name='publicationCountry']"/>
@@ -137,19 +138,31 @@
     <!-- Publisher -->
     <xsl:template match="tss:characteristic[@name='publisher']">
         <xsl:element name="tei:publisher">
-            <xsl:value-of select="."/>
+            <xsl:element name="tei:orgName"><xsl:value-of select="."/></xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Place of publication -->
     <xsl:template match="tss:characteristic[@name='publicationCountry']">
         <xsl:element name="tei:pubPlace">
-            <xsl:value-of select="."/>
+            <xsl:element name="tei:placeName"><xsl:value-of select="."/></xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Pages -->
     <xsl:template match="tss:characteristic[@name='pages']">
         <xsl:element name="tei:biblScope">
             <xsl:attribute name="unit" select="'page'"/>
+            <!-- missing @from and @to -->
+            
+                <xsl:analyze-string select="." regex="(\d+)-(\d+)">
+                    <xsl:matching-substring>
+                        <xsl:attribute name="from" select="regex-group(1)"/>
+                        <xsl:attribute name="to" select="regex-group(2)"/>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <xsl:attribute name="from" select="."/>
+                        <xsl:attribute name="to" select="."/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
@@ -159,15 +172,24 @@
             <!-- due to Sente's limited file management capabilities, I usually inverted issue and volume information for newspaper articles
                 contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or -->
             <xsl:choose>
-                <xsl:when
-                    test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
-                    <xsl:attribute name="unit" select="'issue'"/>
+                <xsl:when test="$p_flip-volume-and-issue = true()">
+                    <xsl:choose>
+                        <xsl:when
+                            test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
+                            <xsl:attribute name="unit" select="'issue'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="unit" select="'volume'"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="unit" select="'volume'"/>
                 </xsl:otherwise>
             </xsl:choose>
-            <!--<xsl:attribute name="unit">vol</xsl:attribute>-->
+            <!-- missing @from and @to -->
+            <xsl:attribute name="from" select="."/>
+            <xsl:attribute name="to" select="."/>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
@@ -177,6 +199,8 @@
             <!-- due to Sente's limited file management capabilities, I usually inverted issue and volume information for newspaper articles 
                 contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or -->
             <xsl:choose>
+                <xsl:when test="$p_flip-volume-and-issue = true()">
+                    <xsl:choose>
                 <xsl:when
                     test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
                     <xsl:attribute name="unit" select="'volume'"/>
@@ -185,6 +209,14 @@
                     <xsl:attribute name="unit" select="'issue'"/>
                 </xsl:otherwise>
             </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="unit" select="'issue'"/>
+                </xsl:otherwise>
+            </xsl:choose>
+            <!-- missing @from and @to -->
+            <xsl:attribute name="from" select="."/>
+            <xsl:attribute name="to" select="."/>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
@@ -207,7 +239,7 @@
                         <xsl:value-of select="$vDate"/>
                     </xsl:attribute>
                     <xsl:value-of
-                        select="format-date($vDate,'[F,*-3], [D1] [MNn,*-3] [Y0001]','en','AD',())"
+                        select="format-date($vDate,'[D1] [MNn,*-3] [Y0001]')"
                     />
                 </xsl:when>
                 <xsl:otherwise>
@@ -270,7 +302,16 @@
     <!-- Titles -->
     <xsl:template match="tss:characteristic[@name='publicationTitle']">
         <xsl:element name="tei:title">
-            <xsl:attribute name="level" select="'m'"/>
+            <xsl:attribute name="level">
+                <xsl:choose>
+                    <xsl:when test="contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or contains(ancestor::tss:reference/tss:publicationType/@name,'Newspaper')">
+                        <xsl:text>j</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>m</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
@@ -301,7 +342,7 @@
         </xsl:attribute>
     </xsl:template>
 
-    <xsl:template name="templId">
+    <xsl:template name="t_idno">
         <xsl:call-template name="templSignatur"/>
         <xsl:if
             test=".//tss:publicationType[@name='Archival File'] or .//tss:publicationType[@name='Archival Letter'] or .//tss:publicationType[@name='Archival Material'] or .//tss:publicationType[@name='Archival Journal Entry']">
