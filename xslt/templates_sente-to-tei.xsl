@@ -292,10 +292,26 @@
                        <xsl:when test="number(regex-group(1)) >1350">
                            <xsl:attribute name="calendar" select="'#cal_julian'"/>
                            <xsl:attribute name="datingMethod" select="'#cal_julian'"/>
+                           <!-- add machine-actionable data -->
+                           <xsl:variable name="v_date-julian">
+                               <xsl:call-template name="funcDateNormaliseInput">
+                                   <xsl:with-param name="pDateString" select="normalize-space(.)"/>
+                                   <xsl:with-param name="pLang" select="'jijmes'"/>
+                               </xsl:call-template>
+                           </xsl:variable>
+                           <xsl:attribute name="when-custom" select="$v_date-julian"/>
                        </xsl:when>
                        <xsl:otherwise>
                            <xsl:attribute name="calendar" select="'#cal_ottomanfiscal'"/>
                            <xsl:attribute name="datingMethod" select="'#cal_ottomanfiscal'"/>
+                           <!-- add machine-actionable data -->
+                           <xsl:variable name="v_date-mali">
+                               <xsl:call-template name="funcDateNormaliseInput">
+                                   <xsl:with-param name="pDateString" select="normalize-space(.)"/>
+                                   <xsl:with-param name="pLang" select="'mijmes'"/>
+                               </xsl:call-template>
+                           </xsl:variable>
+                           <xsl:attribute name="when-custom" select="$v_date-mali"/>
                        </xsl:otherwise>
                    </xsl:choose>
                </xsl:matching-substring>
@@ -307,6 +323,14 @@
         <xsl:element name="tei:date">
             <xsl:attribute name="calendar" select="'#cal_islamic'"/>
             <xsl:attribute name="datingMethod" select="'#cal_islamic'"/>
+            <!-- add machine-actionable data -->
+            <xsl:variable name="v_date-hijri">
+                <xsl:call-template name="funcDateNormaliseInput">
+                    <xsl:with-param name="pDateString" select="normalize-space(.)"/>
+                    <xsl:with-param name="pLang" select="'hijmes'"/>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:attribute name="when-custom" select="$v_date-hijri"/>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
