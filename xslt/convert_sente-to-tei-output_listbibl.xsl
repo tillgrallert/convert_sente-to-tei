@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tss="http://www.thirdstreetsoftware.com/SenteXML-1.0"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     version="2.0">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
 
@@ -13,7 +15,7 @@
         a revisionDesc is needed -->
     <xsl:include href="templates_sente-to-tei.xsl"/>
     
-    <xsl:param name="p_flip-volume-and-issue" select="false()"/>
+    <xsl:param name="p_flip-volume-and-issue" select="true()"/>
 
 
     <!-- Correct structure for the autput, sorting of elements -->
@@ -77,6 +79,7 @@
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
+            <xsl:call-template name="t_revisionDesc"/>
         </xsl:element>
     </xsl:template>
 
