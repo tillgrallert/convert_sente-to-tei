@@ -129,7 +129,7 @@
         <xsl:element name="tei:respStmt">
             <xsl:element name="tei:resp">recipient</xsl:element>
             <xsl:element name="tei:persName">
-                <xsl:value-of select="."/>
+                <xsl:apply-templates select="text()"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
@@ -151,13 +151,13 @@
     <!-- Publisher -->
     <xsl:template match="tss:characteristic[@name='publisher']">
         <xsl:element name="tei:publisher">
-            <xsl:element name="tei:orgName"><xsl:value-of select="."/></xsl:element>
+            <xsl:element name="tei:orgName"><xsl:apply-templates select="text()"/></xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Place of publication -->
     <xsl:template match="tss:characteristic[@name='publicationCountry']">
         <xsl:element name="tei:pubPlace">
-            <xsl:element name="tei:placeName"><xsl:value-of select="."/></xsl:element>
+            <xsl:element name="tei:placeName"><xsl:apply-templates select="text()"/></xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Pages -->
@@ -175,7 +175,7 @@
                         <xsl:attribute name="to" select="."/>
                     </xsl:non-matching-substring>
                 </xsl:analyze-string>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Volume -->
@@ -202,7 +202,7 @@
             <!-- missing @from and @to -->
             <xsl:attribute name="from" select="."/>
             <xsl:attribute name="to" select="."/>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Issue -->
@@ -229,7 +229,7 @@
             <!-- missing @from and @to -->
             <xsl:attribute name="from" select="."/>
             <xsl:attribute name="to" select="."/>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Dates -->
@@ -300,14 +300,14 @@
                    </xsl:choose>
                </xsl:matching-substring>
            </xsl:analyze-string>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Date Hijri']">
         <xsl:element name="tei:date">
             <xsl:attribute name="calendar" select="'#cal_islamic'"/>
             <xsl:attribute name="datingMethod" select="'#cal_islamic'"/>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
 
@@ -324,13 +324,13 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='articleTitle']">
         <xsl:element name="tei:title">
             <xsl:attribute name="level" select="'a'"/>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
 
@@ -372,25 +372,25 @@
     <xsl:template match="tss:characteristic[@name='ISBN']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">ISBN</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='BibTeX cite tag']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">BibTex</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='RIS reference number']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">RIS</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='OCLCID']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">OCLCID</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Sente UUID -->
@@ -398,14 +398,14 @@
         <xsl:element name="tei:idno">
             <!-- Supposedly XML names cannot contain whitespaces, thus, Sente UUID should be named SenteUUID -->
             <xsl:attribute name="type">SenteUUID</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Sente ID -->
     <xsl:template match="tss:characteristic[@name='Citation identifier']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">CitationID</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Signatur -->
@@ -447,7 +447,7 @@
     <xsl:template match="tss:characteristic[@name='URL']">
         <xsl:element name="tei:idno">
             <xsl:attribute name="type" select="'url'"/>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
 
@@ -578,7 +578,7 @@
                         <xsl:attribute name="assigner">
                             <xsl:value-of select="@assigner"/>
                         </xsl:attribute>
-                        <xsl:value-of select="."/>
+                        <xsl:apply-templates select="text()"/>
                     </xsl:element>
                 </xsl:for-each>
             </xsl:element>
@@ -596,7 +596,7 @@
                         <!-- <xsl:attribute name="resp">
                             <xsl:value-of select="@assigner"/>
                         </xsl:attribute> -->
-                        <xsl:value-of select="."/>
+                        <xsl:apply-templates select="text()"/>
                     </xsl:element>
                 </xsl:for-each>
             </xsl:element>
@@ -813,73 +813,76 @@
         </xsl:element>
         </xsl:template>
     
-    <!--  -->
+    <!-- normalize space for all text fields -->
+    <xsl:template match="text()">
+        <xsl:value-of select="normalize-space(.)"/>
+    </xsl:template>
 
     <!-- Still missing fields -->
     <xsl:template match="tss:characteristic[@name='affiliation']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">affiliation</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='publicationStatus']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">publicationStatus</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='status']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">status</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Othertype']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Othertype</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Date read']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Date read</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Repository']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Repository</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Standort']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Standort</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Series number']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Series number</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Short Title']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Short Title</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Medium consulted']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Medium consulted</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Web data source']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Web data source</xsl:attribute>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
 
