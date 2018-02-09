@@ -11,10 +11,13 @@
 
     <!-- to do: 
         include facisimiles for the case of periodicals with one file per page as attachments
-        find a way to keep URLs to digital representations
-        a revisionDesc is needed -->
+        find a way to keep URLs to digital representations -->
 
     <xsl:include href="../../../xslt-functions/functions_core.xsl"/>
+    
+    <!-- identify the author of the change by means of a @xml:id -->
+    <!--    <xsl:param name="p_id-editor" select="'pers_TG'"/>-->
+    <xsl:include href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
 
     <!-- add @xml:lang -->
     <!-- constructing the individual biblStruct -->
@@ -22,6 +25,7 @@
         <xsl:param name="p_input"/>
         <xsl:element name="tei:biblStruct">
             <xsl:call-template name="templLang"/>
+            <xsl:apply-templates select="tss:attachments" mode="m_att.facs"/>
             <xsl:choose>
                 <xsl:when
                     test="$p_input//tss:publicationType[@name='Newspaper article'] or $p_input//tss:publicationType[@name='Archival Periodical Article']">
@@ -161,7 +165,6 @@
         <xsl:element name="tei:biblScope">
             <xsl:attribute name="unit" select="'page'"/>
             <!-- missing @from and @to -->
-            
                 <xsl:analyze-string select="." regex="(\d+)-(\d+)">
                     <xsl:matching-substring>
                         <xsl:attribute name="from" select="regex-group(1)"/>
@@ -363,6 +366,7 @@
         <xsl:apply-templates select=".//tss:characteristic[@name='ISBN']"/>
         <xsl:apply-templates select=".//tss:characteristic[@name='RIS reference number']"/>
         <xsl:apply-templates select=".//tss:characteristic[@name='UUID']"/>
+        <xsl:apply-templates select=".//tss:characteristic[@name='URL']"/>
     </xsl:template>
 
     <xsl:template match="tss:characteristic[@name='ISBN']">
@@ -437,6 +441,13 @@
         <xsl:element name="tei:idno">
             <xsl:attribute name="type">callNumber</xsl:attribute>
             <xsl:value-of select="*//tss:characteristic[@name='call-num']"/>
+        </xsl:element>
+    </xsl:template>
+    <!-- URL -->
+    <xsl:template match="tss:characteristic[@name='URL']">
+        <xsl:element name="tei:idno">
+            <xsl:attribute name="type" select="'url'"/>
+            <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
 
@@ -675,6 +686,19 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <!-- generate a list of white-space-separated urls to be used in @facs -->
+    <xsl:template match="tss:attachments" mode="m_att.facs">
+        <xsl:attribute name="facs">
+            <xsl:for-each select="tss:attachmentReference">
+                <xsl:if test="ends-with(tss:URL,'.jpg')">
+                    <xsl:value-of select="tss:URL"/>
+                    <xsl:if test="position()!=last()">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:attribute>
+    </xsl:template>
 
     <!-- the facsimile tag comes between teiHeader and text -->
     <xsl:template name="tFacsimile">
@@ -712,6 +736,16 @@
                     </xsl:for-each>
                 </xsl:attribute>
                 <xsl:text>File created by automatic conversion from Sente XML.</xsl:text>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template name="t_revisionDesc">
+        <xsl:element name="tei:revisionDesc">
+            <xsl:element name="change">
+                <xsl:attribute name="when" select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
+                <xsl:attribute name="who" select="concat('#',$p_id-editor)"/>
+                <xsl:text>Generated this file by automatic conversion from Sente XML</xsl:text>
             </xsl:element>
         </xsl:element>
     </xsl:template>
@@ -778,6 +812,8 @@
             </xsl:element>
         </xsl:element>
         </xsl:template>
+    
+    <!--  -->
 
     <!-- Still missing fields -->
     <xsl:template match="tss:characteristic[@name='affiliation']">
@@ -837,12 +873,6 @@
     <xsl:template match="tss:characteristic[@name='Medium consulted']">
         <xsl:element name="tss:characteristic">
             <xsl:attribute name="name">Medium consulted</xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tss:characteristic[@name='URL']">
-        <xsl:element name="tss:characteristic">
-            <xsl:attribute name="name">URL</xsl:attribute>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
