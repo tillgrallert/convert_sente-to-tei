@@ -141,7 +141,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Volumes/Dessau%20HD/BachUni/projekte/XML/Sente2TeiXml/Sente2TeiXml%20multipleFile%20v3.xsl</String>
+                                    <String>${pdu}/xslt/convert_sente-to-tei-output_multiple-files.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
