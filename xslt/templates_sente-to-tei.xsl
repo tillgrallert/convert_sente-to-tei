@@ -446,7 +446,7 @@
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='OCLCID']">
         <xsl:element name="tei:idno">
-            <xsl:attribute name="type">OCLCID</xsl:attribute>
+            <xsl:attribute name="type">OCLC</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
