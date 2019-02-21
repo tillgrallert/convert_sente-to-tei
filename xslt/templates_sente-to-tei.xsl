@@ -18,6 +18,10 @@
     <!-- identify the author of the change by means of a @xml:id -->
     <!--    <xsl:param name="p_id-editor" select="'pers_TG'"/>-->
     <xsl:include href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
+    <!--<xsl:include href="../../tss_tools/tss_core-functions.xsl"/>
+    <xsl:include href="../../tss_tools/tss_citation-functions.xsl"/>-->
+    
+    <xsl:param name="p_flip-volume-and-issue" select="true()"/>
 
     <!-- add @xml:lang -->
     <!-- constructing the individual biblStruct -->

@@ -14,8 +14,6 @@
         find a way to keep URLs to digital representations
         a revisionDesc is needed -->
     <xsl:include href="templates_sente-to-tei.xsl"/>
-    
-    <xsl:param name="p_flip-volume-and-issue" select="true()"/>
 
 
     <!-- Correct structure for the autput, sorting of elements -->
