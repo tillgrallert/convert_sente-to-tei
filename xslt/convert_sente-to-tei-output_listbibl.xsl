@@ -28,7 +28,7 @@
             <xsl:element name="tei:TEI">
                 <xsl:call-template name="t_teiHeader"/>
                 <!-- tFacsimile necessitates the use of mGlobal further down the line -->
-<!--                <xsl:call-template name="tFacsimile"/>-->
+<!--                <xsl:call-template name="t_facsimile"/>-->
                 <!-- at the moment this only works for archival material -->
                 <xsl:element name="tei:text">
                     <xsl:element name="tei:body">

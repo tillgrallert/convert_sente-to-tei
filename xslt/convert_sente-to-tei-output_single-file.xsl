@@ -26,11 +26,10 @@
             <xsl:element name="tei:TEI">
                 <xsl:call-template name="templTeiHeader"/>
                 <!-- tFacsimile necessitates the use of mGlobal further down the line -->
-                <xsl:call-template name="tFacsimile"/>
+                <xsl:call-template name="t_facsimile"/>
                 <!-- at the moment this only works for archival material -->
                 <xsl:element name="tei:text">
                     <xsl:element name="tei:group">
-
                         <xsl:apply-templates select="./tss:reference">
                             <!-- here one could select all sort of sorting criteria -->
                             <!-- <xsl:sort select=".//tss:date[@type='Publication']"/> -->
@@ -50,7 +49,9 @@
             <xsl:call-template name="templType"/>
             <xsl:element name="tei:front">
                 <xsl:element name="tei:div">
-                    <xsl:call-template name="templBiblStruct"/>
+                    <xsl:call-template name="t_biblStruct">
+                        <xsl:with-param name="p_input" select="."/>
+                    </xsl:call-template>
                 </xsl:element>
             </xsl:element>
             <xsl:element name="tei:body">

@@ -6,7 +6,7 @@
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
 
     <!--   <xsl:include href="../Functions/BachFunctions v3.xsl"/>-->
-    <xsl:include href="Sente2TeiXml%20templates%20v3c.xsl"/>
+    <xsl:include href="templates_sente-to-tei.xsl"/>
 
     <!-- this stylesheet produces a TEI P5 XML file for each reference found in a Sente XML file -->
 
@@ -58,7 +58,7 @@
                                 </xsl:call-template>
                             </xsl:element>
                         </xsl:element>
-                        <xsl:call-template name="tEditionStmt"/>
+                        <xsl:call-template name="t_editionStmt"/>
                         <xsl:element name="tei:publicationStmt">
                             <xsl:element name="tei:p">
                                 <xsl:text>This should be replaced with some description</xsl:text>
@@ -68,42 +68,31 @@
                             <!--<xsl:element name="p">
                              <xsl:value-of select=".//tss:publicationType/@name"/>
                          </xsl:element>-->
-                            <xsl:call-template name="templBiblStruct"/>
+                            <xsl:call-template name="t_biblStruct">
+                                <xsl:with-param name="p_input" select="."/>
+                            </xsl:call-template>
                         </xsl:element>
                     </xsl:element>
                     <xsl:if test="contains(lower-case(./tss:publicationType/@name),'letter')">
                         <xsl:element name="profileDesc">
-                            <xsl:call-template name="tCorrespDesc"/>
+                            <xsl:call-template name="t_correspDesc"/>
                         </xsl:element>
                     </xsl:if>
-                    <xsl:call-template name="tRevisionDesc"/>
+                    <xsl:call-template name="t_revisionDesc"/>
                 </xsl:element>
-                <xsl:call-template name="tFacsimile"/>
+                <xsl:call-template name="t_facsimile"/>
                 <xsl:element name="tei:text">
                     <xsl:element name="tei:body">
-                        <xsl:call-template name="templAbstract"/>
+                       <!-- <xsl:call-template name="templAbstract"/>-->
+                        <xsl:apply-templates select=".//tss:attachmentReference[1]" mode="m_attachment-to-pb"
+                        />
                         <xsl:element name="tei:div">
-                            <xsl:attribute name="type">text</xsl:attribute>
-                            <xsl:apply-templates select=".//tss:attachmentReference" mode="mGlobal"
+                            <xsl:attribute name="type" select="'item'"/>
+                            <xsl:apply-templates select=".//tss:attachmentReference[position() gt 1]" mode="m_attachment-to-pb"
                             />
                         </xsl:element>
-                        <xsl:apply-templates select=".//tss:keywords" mode="mTEI"/>
-                        <xsl:apply-templates select=".//tss:notes" mode="mOrig"/>
-                        <!--<xsl:element name="div">
-                            <xsl:attribute name="type">abstract</xsl:attribute>
-                            <xsl:element name="p">
-                                <xsl:value-of select=".//tss:characteristic[@name='abstractText']"/>
-                            </xsl:element>
-                        </xsl:element>
-                        <xsl:element name="tei:div">
-                            <xsl:attribute name="type">content</xsl:attribute>
-                            <xsl:apply-templates select=".//tss:attachmentReference" mode="mGlobal"
-                            />
-                        </xsl:element>
-                        <xsl:element name="div">
-                            <xsl:attribute name="type">notes</xsl:attribute>
-                            <xsl:apply-templates select=".//tss:note" mode="mTEI"/>
-                        </xsl:element>-->
+                        <!--<xsl:apply-templates select=".//tss:keywords" mode="mTEI"/>
+                        <xsl:apply-templates select=".//tss:notes" mode="mOrig"/>-->
                     </xsl:element>
                 </xsl:element>
             </xsl:element>

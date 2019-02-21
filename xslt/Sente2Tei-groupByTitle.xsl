@@ -103,7 +103,7 @@
                             </xsl:element>
                             <xsl:call-template name="tRevisionDesc"/>
                         </xsl:element>
-                        <xsl:call-template name="tFacsimile"/>
+                        <xsl:call-template name="t_facsimile"/>
                         <xsl:element name="tei:text">
                             <xsl:element name="tei:group">
                                 <xsl:apply-templates select="current-group()"/>
