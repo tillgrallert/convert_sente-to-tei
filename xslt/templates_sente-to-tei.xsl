@@ -15,6 +15,8 @@
 
     <xsl:include href="../../../xslt-functions/functions_core.xsl"/>
     
+    <!-- date functions -->
+    <xsl:include href="http://tillgrallert.github.io/xslt-calendar-conversion/functions/date-functions.xsl"/>
     <!-- identify the author of the change by means of a @xml:id -->
     <!--    <xsl:param name="p_id-editor" select="'pers_TG'"/>-->
     <xsl:include href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
@@ -278,10 +280,33 @@
                             <xsl:value-of select="$vDPubY"/>
                         </xsl:otherwise>
                     </xsl:choose>
-
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
+        <!-- for Ḥadīqat al-Akhbār: add julian dates -->
+        <xsl:if test="$vDate castable as xs:date">
+            <!--<xsl:variable name="v_date-julian">
+                <xsl:call-template name="funcDateG2J">
+                    <xsl:with-param name="pDateG" select="$vDate"/>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:element name="tei:date">
+                <xsl:attribute name="calendar" select="'#cal_julian'"/>
+                <xsl:attribute name="datingMethod" select="'#cal_julian'"/>
+                <xsl:attribute name="when" select="$vDate"/>
+                <xsl:attribute name="when-custom" select="$v_date-julian"/>
+            </xsl:element>-->
+            <xsl:call-template name="funcDateFormatTei">
+                <xsl:with-param name="pDate">
+                    <xsl:call-template name="funcDateG2J">
+                        <xsl:with-param name="pDateG" select="$vDate"/>
+                    </xsl:call-template>
+                </xsl:with-param>
+                <xsl:with-param name="pCal" select="'J'"/>
+                <xsl:with-param name="pOutput" select="'formatted'"/>
+                <xsl:with-param name="pWeekday" select="true()"/>
+            </xsl:call-template>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Date Rumi']">
         <xsl:element name="tei:date">
@@ -725,7 +750,7 @@
     </xsl:template>
 
     <!-- the facsimile tag comes between teiHeader and text -->
-    <xsl:template name="tFacsimile">
+    <xsl:template name="t_facsimile">
         <xsl:element name="tei:facsimile">
             <xsl:for-each select="descendant-or-self::tss:reference//tss:attachmentReference">
                 <xsl:variable name="vRefUUID" select="ancestor::tss:reference//tss:characteristic[@name='UUID']"/>
@@ -747,36 +772,20 @@
     </xsl:template>
 
     <!-- revisionDesc -->
-    <xsl:template name="tRevisionDesc">
-        <xsl:param name="pEditor" select="'Till Grallert'"/>
-        <xsl:element name="tei:revisionDesc">
-            <xsl:element name="tei:change">
-                <xsl:attribute name="when"
-                    select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
-                <xsl:attribute name="who">
-                    <xsl:text>#p</xsl:text>
-                    <xsl:for-each select="tokenize($pEditor,'\s')">
-                        <xsl:value-of select="upper-case(substring(.,1,1))"/>
-                    </xsl:for-each>
-                </xsl:attribute>
-                <xsl:text>File created by automatic conversion from Sente XML.</xsl:text>
-            </xsl:element>
-        </xsl:element>
-    </xsl:template>
-    
     <xsl:template name="t_revisionDesc">
         <xsl:element name="tei:revisionDesc">
             <xsl:element name="change">
                 <xsl:attribute name="when" select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
                 <xsl:attribute name="who" select="concat('#',$p_id-editor)"/>
+                <xsl:attribute name="xml:lang" select="'en'"/>
                 <xsl:text>Generated this file by automatic conversion from Sente XML</xsl:text>
             </xsl:element>
         </xsl:element>
     </xsl:template>
 
     <!-- editionStmt -->
-    <xsl:template name="tEditionStmt">
-        <xsl:param name="pEditor" select="'Till Grallert'"/>
+    <xsl:template name="t_editionStmt">
+        <xsl:param name="p_editor" select="'Till Grallert'"/>
         <xsl:element name="tei:editionStmt">
             <xsl:element name="tei:edition">
                 <xsl:element name="tei:date">
@@ -792,18 +801,18 @@
                 <xsl:element name="tei:persName">
                     <xsl:attribute name="xml:id">
                         <xsl:text>pers_</xsl:text>
-                        <xsl:for-each select="tokenize($pEditor,'\s')">
+                        <xsl:for-each select="tokenize($p_editor,'\s')">
                             <xsl:value-of select="upper-case(substring(.,1,1))"/>
                         </xsl:for-each>
                     </xsl:attribute>
-                    <xsl:value-of select="$pEditor"/>
+                    <xsl:value-of select="$p_editor"/>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
     </xsl:template>
     
     <!--  correspDesc -->
-        <xsl:template name="tCorrespDesc">
+        <xsl:template name="t_correspDesc">
             <xsl:element name="correspDesc">
             <xsl:element name="correspAction">
                 <xsl:attribute name="type" select="'sent'"/>
