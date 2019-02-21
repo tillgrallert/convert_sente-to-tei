@@ -758,7 +758,7 @@
     </xsl:template>
 
     <!-- the facsimile tag comes between teiHeader and text -->
-    <xsl:template name="tFacsimile">
+    <xsl:template name="t_facsimile">
         <xsl:element name="tei:facsimile">
             <xsl:for-each select="descendant-or-self::tss:reference//tss:attachmentReference">
                 <xsl:variable name="vRefUUID" select="ancestor::tss:reference//tss:characteristic[@name='UUID']"/>
@@ -785,14 +785,15 @@
             <xsl:element name="change">
                 <xsl:attribute name="when" select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
                 <xsl:attribute name="who" select="concat('#',$p_id-editor)"/>
+                <xsl:attribute name="xml:lang" select="'en'"/>
                 <xsl:text>Generated this file by automatic conversion from Sente XML</xsl:text>
             </xsl:element>
         </xsl:element>
     </xsl:template>
 
     <!-- editionStmt -->
-    <xsl:template name="tEditionStmt">
-        <xsl:param name="pEditor" select="'Till Grallert'"/>
+    <xsl:template name="t_editionStmt">
+        <xsl:param name="p_editor" select="'Till Grallert'"/>
         <xsl:element name="tei:editionStmt">
             <xsl:element name="tei:edition">
                 <xsl:element name="tei:date">
@@ -808,18 +809,18 @@
                 <xsl:element name="tei:persName">
                     <xsl:attribute name="xml:id">
                         <xsl:text>pers_</xsl:text>
-                        <xsl:for-each select="tokenize($pEditor,'\s')">
+                        <xsl:for-each select="tokenize($p_editor,'\s')">
                             <xsl:value-of select="upper-case(substring(.,1,1))"/>
                         </xsl:for-each>
                     </xsl:attribute>
-                    <xsl:value-of select="$pEditor"/>
+                    <xsl:value-of select="$p_editor"/>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
     </xsl:template>
     
     <!--  correspDesc -->
-        <xsl:template name="tCorrespDesc">
+        <xsl:template name="t_correspDesc">
             <xsl:element name="correspDesc">
             <xsl:element name="correspAction">
                 <xsl:attribute name="type" select="'sent'"/>
