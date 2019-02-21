@@ -3,7 +3,9 @@
     xmlns:ct="http://wiki.tei-c.org/index.php/SIG:Correspondence/task-force-correspDesc"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:tss="http://www.thirdstreetsoftware.com/SenteXML-1.0"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:oape="https://openarabicpe.github.io/ns"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" version="1.0"/>
 
@@ -15,6 +17,8 @@
 
     <xsl:include href="../../../xslt-functions/functions_core.xsl"/>
     
+    <!-- date functions -->
+    <xsl:include href="http://tillgrallert.github.io/xslt-calendar-conversion/functions/date-functions.xsl"/>
     <!-- identify the author of the change by means of a @xml:id -->
     <!--    <xsl:param name="p_id-editor" select="'pers_TG'"/>-->
     <xsl:include href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
@@ -270,11 +274,12 @@
                             <xsl:attribute name="when" select="$vDPubY"/>
                             <xsl:attribute name="notBefore"
                                 select="concat($vDPubY,'-',$vDPubM,'-01')"/>
-                            <xsl:call-template name="funcDateMonthNameNumber">
+                            <!--<xsl:call-template name="funcDateMonthNameNumber">
                                 <xsl:with-param name="pMonth" select="$vDPubM"/>
                                 <xsl:with-param name="pLang" select="'GEn'"/>
                                 <xsl:with-param name="pMode" select="'name'"/>
-                            </xsl:call-template>
+                            </xsl:call-template>-->
+                            <xsl:value-of select="oape:date-convert-months($vDPubM,'name','','#cal_gregorian')"/>
                             <xsl:value-of select="concat(' ',$vDPubY)"/>
                         </xsl:when>
                         <xsl:otherwise>
@@ -282,10 +287,34 @@
                             <xsl:value-of select="$vDPubY"/>
                         </xsl:otherwise>
                     </xsl:choose>
-
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
+        <!-- for Ḥadīqat al-Akhbār: add julian dates -->
+        <xsl:if test="$vDate castable as xs:date">
+            <!--<xsl:variable name="v_date-julian">
+                <xsl:call-template name="funcDateG2J">
+                    <xsl:with-param name="pDateG" select="$vDate"/>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:element name="tei:date">
+                <xsl:attribute name="calendar" select="'#cal_julian'"/>
+                <xsl:attribute name="datingMethod" select="'#cal_julian'"/>
+                <xsl:attribute name="when" select="$vDate"/>
+                <xsl:attribute name="when-custom" select="$v_date-julian"/>
+            </xsl:element>-->
+            <!--<xsl:call-template name="funcDateFormatTei">
+                <xsl:with-param name="pDate">
+                    <xsl:call-template name="funcDateG2J">
+                        <xsl:with-param name="pDateG" select="$vDate"/>
+                    </xsl:call-template>
+                </xsl:with-param>
+                <xsl:with-param name="pCal" select="'J'"/>
+                <xsl:with-param name="pOutput" select="'formatted'"/>
+                <xsl:with-param name="pWeekday" select="true()"/>
+            </xsl:call-template>-->
+            <xsl:copy-of select="oape:date-format-iso-string-to-tei(oape:date-convert-calendars($vDate,'#cal_gregorian', '#cal_julian'), '#cal_julian',true(),true(),'ar-Latn-x-ijmes')"/>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name='Date Rumi']">
         <xsl:element name="tei:date">
@@ -297,11 +326,11 @@
                            <xsl:attribute name="calendar" select="'#cal_julian'"/>
                            <xsl:attribute name="datingMethod" select="'#cal_julian'"/>
                            <!-- add machine-actionable data -->
-                           <xsl:variable name="v_date-julian">
-                               <xsl:call-template name="funcDateNormaliseInput">
+                           <xsl:variable name="v_date-julian" select="oape:date-normalise-input(normalize-space(.), 'ar-Latn-x-ijmes','#cal_julian')">
+                              <!-- <xsl:call-template name="funcDateNormaliseInput">
                                    <xsl:with-param name="pDateString" select="normalize-space(.)"/>
                                    <xsl:with-param name="pLang" select="'jijmes'"/>
-                               </xsl:call-template>
+                               </xsl:call-template>-->
                            </xsl:variable>
                            <xsl:attribute name="when-custom" select="$v_date-julian"/>
                        </xsl:when>
@@ -309,11 +338,11 @@
                            <xsl:attribute name="calendar" select="'#cal_ottomanfiscal'"/>
                            <xsl:attribute name="datingMethod" select="'#cal_ottomanfiscal'"/>
                            <!-- add machine-actionable data -->
-                           <xsl:variable name="v_date-mali">
-                               <xsl:call-template name="funcDateNormaliseInput">
+                           <xsl:variable name="v_date-mali" select="oape:date-normalise-input(normalize-space(.), 'ar-Latn-x-ijmes','#cal_ottomanfiscal')">
+                               <!--<xsl:call-template name="funcDateNormaliseInput">
                                    <xsl:with-param name="pDateString" select="normalize-space(.)"/>
                                    <xsl:with-param name="pLang" select="'mijmes'"/>
-                               </xsl:call-template>
+                               </xsl:call-template>-->
                            </xsl:variable>
                            <xsl:attribute name="when-custom" select="$v_date-mali"/>
                        </xsl:otherwise>
@@ -328,11 +357,11 @@
             <xsl:attribute name="calendar" select="'#cal_islamic'"/>
             <xsl:attribute name="datingMethod" select="'#cal_islamic'"/>
             <!-- add machine-actionable data -->
-            <xsl:variable name="v_date-hijri">
-                <xsl:call-template name="funcDateNormaliseInput">
+            <xsl:variable name="v_date-hijri" select="oape:date-normalise-input(normalize-space(.), 'ar-Latn-x-ijmes','#cal_islamic')">
+                <!--<xsl:call-template name="funcDateNormaliseInput">
                     <xsl:with-param name="pDateString" select="normalize-space(.)"/>
                     <xsl:with-param name="pLang" select="'hijmes'"/>
-                </xsl:call-template>
+                </xsl:call-template>-->
             </xsl:variable>
             <xsl:attribute name="when-custom" select="$v_date-hijri"/>
             <xsl:apply-templates select="text()"/>
@@ -751,23 +780,6 @@
     </xsl:template>
 
     <!-- revisionDesc -->
-    <xsl:template name="tRevisionDesc">
-        <xsl:param name="pEditor" select="'Till Grallert'"/>
-        <xsl:element name="tei:revisionDesc">
-            <xsl:element name="tei:change">
-                <xsl:attribute name="when"
-                    select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
-                <xsl:attribute name="who">
-                    <xsl:text>#p</xsl:text>
-                    <xsl:for-each select="tokenize($pEditor,'\s')">
-                        <xsl:value-of select="upper-case(substring(.,1,1))"/>
-                    </xsl:for-each>
-                </xsl:attribute>
-                <xsl:text>File created by automatic conversion from Sente XML.</xsl:text>
-            </xsl:element>
-        </xsl:element>
-    </xsl:template>
-    
     <xsl:template name="t_revisionDesc">
         <xsl:element name="tei:revisionDesc">
             <xsl:element name="change">
