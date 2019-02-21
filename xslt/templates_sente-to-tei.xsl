@@ -721,7 +721,7 @@
     </xsl:template>
 
     <!-- mGlobal links to xml:ids of images in the facsimile tag of the TEI file -->
-    <xsl:template match="tss:attachmentReference" mode="mGlobal">
+    <xsl:template match="tss:attachmentReference" mode="m_attachment-to-pb">
         <xsl:variable name="vRefUUID" select="ancestor::tss:reference//tss:characteristic[@name='UUID']"/>
         <xsl:choose>
             <xsl:when test="ends-with(./tss:URL,'.jpg')">
