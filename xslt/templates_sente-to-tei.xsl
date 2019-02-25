@@ -725,6 +725,9 @@
         <xsl:variable name="vRefUUID" select="ancestor::tss:reference//tss:characteristic[@name='UUID']"/>
         <xsl:choose>
             <xsl:when test="ends-with(./tss:URL,'.jpg')">
+                <xsl:element name="tei:gap">
+                    <xsl:attribute name="resp" select="concat('#',$p_editor)"/>
+                </xsl:element>
                 <xsl:element name="tei:pb">
                     <xsl:attribute name="xml:id"
                         select="concat('pb_',$vRefUUID,'_',count(preceding-sibling::tss:attachmentReference)+1)"/>
@@ -732,6 +735,9 @@
                         select="concat('#facs_',$vRefUUID,'_',count(preceding-sibling::tss:attachmentReference)+1)"/>
                     <xsl:attribute name="n"
                         select="count(preceding-sibling::tss:attachmentReference)+1"/>
+                </xsl:element>
+                <xsl:element name="tei:gap">
+                    <xsl:attribute name="resp" select="concat('#',$p_editor)"/>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
