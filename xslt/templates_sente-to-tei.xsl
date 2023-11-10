@@ -18,10 +18,10 @@
 
     <!-- date functions -->
     <!--    <xsl:include href="http://tillgrallert.github.io/xslt-calendar-conversion/functions/date-functions.xsl"/>-->
-    <xsl:include href="../../../xslt-calendar-conversion/date-function.xsl"/>
+    <xsl:import href="../../../xslt-calendar-conversion/functions/date-functions.xsl"/>
     <!-- identify the author of the change by means of a @xml:id -->
     <!--    <xsl:param name="p_id-editor" select="'pers_TG'"/>-->
-    <xsl:include href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
+    <xsl:import href="../../../OpenArabicPE/oxygen-project/OpenArabicPE_parameters.xsl"/>
     <!--<xsl:include href="../../tss_tools/tss_core-functions.xsl"/>
     <xsl:include href="../../tss_tools/tss_citation-functions.xsl"/>-->
 
@@ -31,18 +31,18 @@
     <!-- constructing the individual biblStruct -->
     <xsl:template name="t_biblStruct">
         <xsl:param name="p_input"/>
-        <xsl:element name="tei:biblStruct">
+        <xsl:element name="biblStruct">
             <xsl:call-template name="templLang"/>
             <xsl:apply-templates select="tss:attachments" mode="m_att.facs"/>
             <xsl:choose>
                 <xsl:when
                     test="$p_input//tss:publicationType[@name = 'Newspaper article'] or $p_input//tss:publicationType[@name = 'Archival Periodical Article']">
-                    <xsl:element name="tei:analytic">
+                    <xsl:element name="analytic">
                         <xsl:apply-templates select="$p_input//tss:author[@role = 'Author']"/>
                         <xsl:apply-templates
                             select="$p_input//tss:characteristic[@name = 'articleTitle']"/>
                     </xsl:element>
-                    <xsl:element name="tei:monogr">
+                    <xsl:element name="monogr">
                         <xsl:apply-templates select="$p_input//tss:author[@role = 'Editor']"/>
                         <xsl:apply-templates
                             select="$p_input//tss:characteristic[@name = 'publicationTitle']"/>
@@ -60,24 +60,24 @@
                         <xsl:for-each select="./tss:authors/tss:author[@role='Author']">
                             <xsl:element name="ct:sender">
                                 <!-\-<xsl:apply-templates select="."/>-\->
-                                <xsl:element name="tei:persName">
-                                    <xsl:element name="tei:surname">
+                                <xsl:element name="persName">
+                                    <xsl:element name="surname">
                                         <xsl:value-of select="./tss:surname"/>
                                     </xsl:element>
                                     <xsl:text>, </xsl:text>
-                                    <xsl:element name="tei:forename">
+                                    <xsl:element name="forename">
                                         <xsl:value-of select="./tss:forenames"/>
                                     </xsl:element>
                                 </xsl:element>
                             </xsl:element>
                         </xsl:for-each>
                         <xsl:element name="ct:Addressee">
-                            <xsl:element name="tei:persName">
+                            <xsl:element name="persName">
                                 <xsl:value-of select=".//tss:characteristic[@name='Recipient']"/>
                             </xsl:element>
                         </xsl:element>
                         <xsl:element name="ct:placeSender">
-                            <xsl:element name="tei:placeName">
+                            <xsl:element name="placeName">
                                 <xsl:value-of
                                     select=".//tss:characteristic[@name='publicationCountry']"/>
                             </xsl:element>
@@ -92,7 +92,7 @@
                 </xsl:when>-->
 
                 <xsl:otherwise>
-                    <xsl:element name="tei:monogr">
+                    <xsl:element name="monogr">
                         <xsl:apply-templates select="$p_input//tss:author[@role = 'Author']"/>
                         <xsl:apply-templates select="$p_input//tss:author[@role = 'Editor']"/>
                         <xsl:apply-templates
@@ -114,22 +114,22 @@
 
     <!-- Contributors to the source/reference -->
     <xsl:template match="tss:author[@role = 'Author']">
-        <xsl:element name="tei:author">
-            <xsl:element name="tei:surname">
+        <xsl:element name="author">
+            <xsl:element name="surname">
                 <xsl:value-of select="tss:surname"/>
             </xsl:element>
-            <xsl:element name="tei:forename">
+            <xsl:element name="forename">
                 <xsl:value-of select="tss:forenames"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="tss:author[@role = 'Editor']">
-        <xsl:element name="tei:editor">
-            <xsl:element name="tei:surname">
+        <xsl:element name="editor">
+            <xsl:element name="surname">
                 <xsl:value-of select="tss:surname"/>
             </xsl:element>
-            <xsl:element name="tei:forename">
+            <xsl:element name="forename">
                 <xsl:value-of select="tss:forenames"/>
             </xsl:element>
         </xsl:element>
@@ -137,9 +137,9 @@
 
     <!-- Recipient -->
     <xsl:template match="tss:characteristic[@name = 'Recipient']">
-        <xsl:element name="tei:respStmt">
-            <xsl:element name="tei:resp">recipient</xsl:element>
-            <xsl:element name="tei:persName">
+        <xsl:element name="respStmt">
+            <xsl:element name="resp">recipient</xsl:element>
+            <xsl:element name="persName">
                 <xsl:apply-templates select="text()"/>
             </xsl:element>
         </xsl:element>
@@ -147,7 +147,7 @@
     <!-- Imprint -->
     <xsl:template name="t_imprint">
         <xsl:param name="p_input"/>
-        <xsl:element name="tei:imprint">
+        <xsl:element name="imprint">
             <xsl:apply-templates select="$p_input//tss:characteristic[@name = 'publisher']"/>
             <xsl:apply-templates select="$p_input//tss:characteristic[@name = 'publicationCountry']"/>
             <xsl:apply-templates select="$p_input//tss:date[@type = 'Publication']"/>
@@ -161,23 +161,23 @@
 
     <!-- Publisher -->
     <xsl:template match="tss:characteristic[@name = 'publisher']">
-        <xsl:element name="tei:publisher">
-            <xsl:element name="tei:orgName">
+        <xsl:element name="publisher">
+            <xsl:element name="orgName">
                 <xsl:apply-templates select="text()"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Place of publication -->
     <xsl:template match="tss:characteristic[@name = 'publicationCountry']">
-        <xsl:element name="tei:pubPlace">
-            <xsl:element name="tei:placeName">
+        <xsl:element name="pubPlace">
+            <xsl:element name="placeName">
                 <xsl:apply-templates select="text()"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- Pages -->
     <xsl:template match="tss:characteristic[@name = 'pages']">
-        <xsl:element name="tei:biblScope">
+        <xsl:element name="biblScope">
             <xsl:attribute name="unit" select="'page'"/>
             <!-- missing @from and @to -->
             <xsl:analyze-string select="." regex="(\d+)-(\d+)">
@@ -195,7 +195,7 @@
     </xsl:template>
     <!-- Volume -->
     <xsl:template match="tss:characteristic[@name = 'volume']">
-        <xsl:element name="tei:biblScope">
+        <xsl:element name="biblScope">
             <!-- due to Sente's limited file management capabilities, I usually inverted issue and volume information for newspaper articles
                 contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or -->
             <xsl:choose>
@@ -222,7 +222,7 @@
     </xsl:template>
     <!-- Issue -->
     <xsl:template match="tss:characteristic[@name = 'issue']">
-        <xsl:element name="tei:biblScope">
+        <xsl:element name="biblScope">
             <!-- due to Sente's limited file management capabilities, I usually inverted issue and volume information for newspaper articles 
                 contains(ancestor::tss:reference/tss:publicationType/@name,'Periodical') or -->
             <xsl:choose>
@@ -250,12 +250,12 @@
     <!-- Dates -->
     <xsl:template match="tss:date[@type = 'Publication']">
         <xsl:variable name="vDPubY" select="@year"/>
-        <xsl:variable name="vDPubM" select="format-number(@month, '00')"/>
-        <xsl:variable name="vDPubD" select="format-number(@day, '00')"/>
+        <xsl:variable name="vDPubM" select="format-number(number(@month), '00')"/>
+        <xsl:variable name="vDPubD" select="format-number(number(@day), '00')"/>
         <xsl:variable name="vDate">
             <xsl:value-of select="concat($vDPubY, '-', $vDPubM, '-', $vDPubD)"/>
         </xsl:variable>
-        <xsl:element name="tei:date">
+        <xsl:element name="date">
             <!-- the Gregorian norm must not be recorded -->
             <!--<xsl:attribute name="calendar">Gregorian</xsl:attribute>-->
             <!-- human-readable output of the date is mandatory here -->
@@ -303,7 +303,7 @@
                     <xsl:with-param name="pDateG" select="$vDate"/>
                 </xsl:call-template>
             </xsl:variable>
-            <xsl:element name="tei:date">
+            <xsl:element name="date">
                 <xsl:attribute name="calendar" select="'#cal_julian'"/>
                 <xsl:attribute name="datingMethod" select="'#cal_julian'"/>
                 <xsl:attribute name="when" select="$vDate"/>
@@ -325,7 +325,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'Date Rumi']">
-        <xsl:element name="tei:date">
+        <xsl:element name="date">
             <!-- determine whether the date is Rumi or Mali -->
             <xsl:analyze-string select="." regex=".*(\d{{4}}).*">
                 <xsl:matching-substring>
@@ -355,7 +355,7 @@
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'Date Hijri']">
-        <xsl:element name="tei:date">
+        <xsl:element name="date">
             <xsl:attribute name="calendar" select="'#cal_islamic'"/>
             <xsl:attribute name="datingMethod" select="'#cal_islamic'"/>
             <!-- add machine-actionable data -->
@@ -369,7 +369,7 @@
 
     <!-- Titles -->
     <xsl:template match="tss:characteristic[@name = 'publicationTitle']">
-        <xsl:element name="tei:title">
+        <xsl:element name="title">
             <xsl:attribute name="level">
                 <xsl:choose>
                     <xsl:when
@@ -385,7 +385,7 @@
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'articleTitle']">
-        <xsl:element name="tei:title">
+        <xsl:element name="title">
             <xsl:attribute name="level" select="'a'"/>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
@@ -393,9 +393,9 @@
 
     <!-- Abstract -->
     <xsl:template name="templAbstract">
-        <xsl:element name="tei:div">
+        <xsl:element name="div">
             <xsl:attribute name="type">abstract</xsl:attribute>
-            <xsl:element name="tei:p">
+            <xsl:element name="p">
                 <!-- In order to preserve existing markup copy-of must be chosen -->
                 <xsl:copy-of select=".//tss:characteristic[@name = 'abstractText']/node()"/>
             </xsl:element>
@@ -427,32 +427,32 @@
     </xsl:template>
 
     <xsl:template match="tss:characteristic[@name = 'ISBN']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">ISBN</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'BibTeX cite tag']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">BibTex</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'RIS reference number']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">RIS</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="tss:characteristic[@name = 'OCLCID']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">OCLC</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Sente UUID -->
     <xsl:template match="tss:characteristic[@name = 'UUID']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <!-- Supposedly XML names cannot contain whitespaces, thus, Sente UUID should be named SenteUUID -->
             <xsl:attribute name="type">SenteUUID</xsl:attribute>
             <xsl:apply-templates select="text()"/>
@@ -460,7 +460,7 @@
     </xsl:template>
     <!-- Sente ID -->
     <xsl:template match="tss:characteristic[@name = 'Citation identifier']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">CitationID</xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
@@ -477,14 +477,14 @@
                 <xsl:choose>
                     <!-- If the reference has no call number this field will be filled with Signatur data -->
                     <xsl:when test="*//tss:characteristic[@name = 'call-num']">
-                        <xsl:element name="tei:idno">
+                        <xsl:element name="idno">
                             <xsl:attribute name="type">Signatur</xsl:attribute>
                             <xsl:value-of select="*//tss:characteristic[@name = 'Signatur']"/>
                         </xsl:element>
                         <xsl:call-template name="templCallNum"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:element name="tei:idno">
+                        <xsl:element name="idno">
                             <xsl:attribute name="type">callNumber</xsl:attribute>
                             <xsl:value-of select="*//tss:characteristic[@name = 'Signatur']"/>
                         </xsl:element>
@@ -495,14 +495,14 @@
     </xsl:template>
     <!-- Call Number -->
     <xsl:template match="tss:characteristic[@name = 'call-num']" name="templCallNum">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">callNumber</xsl:attribute>
             <xsl:value-of select="*//tss:characteristic[@name = 'call-num']"/>
         </xsl:element>
     </xsl:template>
     <!-- URL -->
     <xsl:template match="tss:characteristic[@name = 'URL']">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type" select="'url'"/>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
@@ -510,7 +510,7 @@
 
     <!-- construct an archival class mark structure -->
     <xsl:template name="templACM">
-        <xsl:element name="tei:idno">
+        <xsl:element name="idno">
             <xsl:attribute name="type">archival-class-mark</xsl:attribute>
             <xsl:value-of select=".//tss:characteristic[@name = 'Repository']"/>
             <xsl:if test=".//tss:characteristic[@name = 'Repository']">
@@ -561,29 +561,29 @@
 
     <!-- Notes -->
     <xsl:template match="tss:notes" mode="mOrig">
-        <xsl:element name="tei:div">
+        <xsl:element name="div">
             <xsl:attribute name="type">notes</xsl:attribute>
             <xsl:for-each select=".//tss:note">
                 <xsl:sort data-type="text" select="./tss:pages"/>
                 <!-- the field contains mixed strings and page ranges-->
-                <xsl:element name="tei:div">
+                <xsl:element name="div">
                     <xsl:attribute name="type">note</xsl:attribute>
                     <!-- I do not know whether @n must be unique -->
                     <xsl:attribute name="n">
                         <xsl:value-of select="./tss:pages"/>
                     </xsl:attribute>
-                    <xsl:element name="tei:head">
+                    <xsl:element name="head">
                         <xsl:value-of select=".//tss:title"/>
                     </xsl:element>
-                    <xsl:element name="tei:p">
+                    <xsl:element name="p">
                         <xsl:text>p.</xsl:text>
                         <xsl:value-of select=".//tss:pages"/>
                         <xsl:text>; </xsl:text>
-                        <xsl:element name="tei:quote">
+                        <xsl:element name="quote">
                             <xsl:value-of select=".//tss:quotation"/>
                         </xsl:element>
                     </xsl:element>
-                    <xsl:element name="tei:p">
+                    <xsl:element name="p">
                         <!-- @type is not allowed on p -->
                         <xsl:value-of select=".//tss:comment"/>
                     </xsl:element>
@@ -593,9 +593,9 @@
     </xsl:template>
 
     <xsl:template match="tss:note" mode="mTEI">
-        <xsl:element name="tei:div">
+        <xsl:element name="div">
             <xsl:attribute name="type">note</xsl:attribute>
-            <xsl:element name="tei:pb">
+            <xsl:element name="pb">
                 <xsl:attribute name="n">
                     <xsl:value-of select="./tss:pages"/>
                 </xsl:attribute>
@@ -604,17 +604,17 @@
                 </xsl:attribute>
             </xsl:element>
 
-            <xsl:element name="tei:head">
+            <xsl:element name="head">
                 <xsl:value-of select="./tss:title"/>
             </xsl:element>
 
-            <xsl:element name="tei:div">
+            <xsl:element name="div">
                 <xsl:attribute name="type">quote</xsl:attribute>
-                <xsl:element name="tei:p">
+                <xsl:element name="p">
                     <xsl:value-of select="./tss:quotation"/>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="tei:note">
+            <xsl:element name="note">
                 <xsl:value-of select="./tss:comment"/>
             </xsl:element>
 
@@ -624,7 +624,7 @@
     <!-- Keywords/Tags -->
     <!-- This transformation replicates the original Sente XML -->
     <xsl:template match="tss:keywords" mode="mOrig">
-        <xsl:element name="tei:div">
+        <xsl:element name="div">
             <xsl:attribute name="type">tags</xsl:attribute>
             <xsl:element name="tss:keywords">
                 <xsl:for-each select="./tss:keyword">
@@ -642,12 +642,12 @@
     </xsl:template>
 
     <xsl:template match="tss:keywords" mode="mTEI">
-        <xsl:element name="tei:div">
+        <xsl:element name="div">
             <xsl:attribute name="type">tags</xsl:attribute>
-            <xsl:element name="tei:list">
+            <xsl:element name="list">
                 <xsl:for-each select="./tss:keyword">
                     <xsl:sort data-type="text" order="ascending" select="."/>
-                    <xsl:element name="tei:item">
+                    <xsl:element name="item">
                         <!-- The assigner should be retained -->
                         <!-- <xsl:attribute name="resp">
                             <xsl:value-of select="@assigner"/>
@@ -711,14 +711,14 @@
     <xsl:template match="tss:attachmentReference" mode="mLocal">
         <xsl:choose>
             <xsl:when test="ends-with(./tss:URL, '.jpg')">
-                <xsl:element name="tei:pb">
+                <xsl:element name="pb">
                     <xsl:attribute name="facs" select="./tss:URL"/>
                     <xsl:attribute name="n"
                         select="count(preceding-sibling::tss:attachmentReference) + 1"/>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:element name="tei:div">
+                <xsl:element name="div">
                     <xsl:attribute name="facs" select="./tss:URL"/>
                 </xsl:element>
             </xsl:otherwise>
@@ -731,10 +731,10 @@
             select="ancestor::tss:reference//tss:characteristic[@name = 'UUID']"/>
         <xsl:choose>
             <xsl:when test="ends-with(./tss:URL, '.jpg')">
-                <xsl:element name="tei:gap">
+                <xsl:element name="gap">
                     <xsl:attribute name="resp" select="concat('#', $p_editor)"/>
                 </xsl:element>
-                <xsl:element name="tei:pb">
+                <xsl:element name="pb">
                     <xsl:attribute name="xml:id"
                         select="concat('pb_', $vRefUUID, '_', count(preceding-sibling::tss:attachmentReference) + 1)"/>
                     <xsl:attribute name="facs"
@@ -742,12 +742,12 @@
                     <xsl:attribute name="n"
                         select="count(preceding-sibling::tss:attachmentReference) + 1"/>
                 </xsl:element>
-                <xsl:element name="tei:gap">
+                <xsl:element name="gap">
                     <xsl:attribute name="resp" select="concat('#', $p_editor)"/>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:element name="tei:div">
+                <xsl:element name="div">
                     <xsl:attribute name="facs"
                         select="concat('#facs_', $vRefUUID, '_', count(preceding-sibling::tss:attachmentReference) + 1)"
                     />
@@ -771,17 +771,17 @@
 
     <!-- the facsimile tag comes between teiHeader and text -->
     <xsl:template name="t_facsimile">
-        <xsl:element name="tei:facsimile">
+        <xsl:element name="facsimile">
             <xsl:for-each select="descendant-or-self::tss:reference//tss:attachmentReference">
                 <xsl:variable name="vRefUUID"
                     select="ancestor::tss:reference//tss:characteristic[@name = 'UUID']"/>
                 <xsl:variable name="vFacsID"
                     select="concat('facs_', $vRefUUID, '_', count(preceding-sibling::tss:attachmentReference) + 1)"/>
-                <xsl:element name="tei:surface">
+                <xsl:element name="surface">
                     <xsl:attribute name="xml:id">
                         <xsl:value-of select="$vFacsID"/>
                     </xsl:attribute>
-                    <xsl:element name="tei:graphic">
+                    <xsl:element name="graphic">
                         <xsl:attribute name="url" select="./tss:URL"/>
                         <xsl:attribute name="xml:id">
                             <xsl:value-of select="concat($vFacsID, '_source')"/>
@@ -794,7 +794,7 @@
 
     <!-- revisionDesc -->
     <xsl:template name="t_revisionDesc">
-        <xsl:element name="tei:revisionDesc">
+        <xsl:element name="revisionDesc">
             <xsl:element name="change">
                 <xsl:attribute name="when"
                     select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
@@ -808,19 +808,19 @@
     <!-- editionStmt -->
     <xsl:template name="t_editionStmt">
         <xsl:param name="p_editor" select="'Till Grallert'"/>
-        <xsl:element name="tei:editionStmt">
-            <xsl:element name="tei:edition">
-                <xsl:element name="tei:date">
+        <xsl:element name="editionStmt">
+            <xsl:element name="edition">
+                <xsl:element name="date">
                     <xsl:attribute name="when"
                         select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
                     <xsl:value-of select="format-date(current-date(), '[D1] [MNn, *-3]. [Y0001]')"/>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="tei:respStmt">
-                <xsl:element name="tei:resp">
+            <xsl:element name="respStmt">
+                <xsl:element name="resp">
                     <xsl:text>Created the original TEI P5 XML file</xsl:text>
                 </xsl:element>
-                <xsl:element name="tei:persName">
+                <xsl:element name="persName">
                     <xsl:attribute name="xml:id">
                         <xsl:text>pers_</xsl:text>
                         <xsl:for-each select="tokenize($p_editor, '\s')">
@@ -839,19 +839,19 @@
             <xsl:element name="correspAction">
                 <xsl:attribute name="type" select="'sent'"/>
                 <xsl:for-each select="./tss:authors/tss:author[@role = 'Author']">
-                    <xsl:element name="tei:persName">
-                        <xsl:element name="tei:surname">
+                    <xsl:element name="persName">
+                        <xsl:element name="surname">
                             <xsl:value-of select="./tss:surname"/>
                         </xsl:element>
                         <xsl:text>, </xsl:text>
-                        <xsl:element name="tei:forename">
+                        <xsl:element name="forename">
                             <xsl:value-of select="./tss:forenames"/>
                         </xsl:element>
                     </xsl:element>
-                    <xsl:element name="tei:placeName">
+                    <xsl:element name="placeName">
                         <xsl:value-of select=".//tss:characteristic[@name = 'publicationCountry']"/>
                     </xsl:element>
-                    <xsl:element name="tei:date">
+                    <xsl:element name="date">
                         <xsl:call-template name="funcSenteNormalizeDate">
                             <xsl:with-param name="pInput"
                                 select=".//tss:date[@type = 'Publication']"/>
@@ -861,7 +861,7 @@
             </xsl:element>
             <xsl:element name="correspAction">
                 <xsl:attribute name="type" select="'received'"/>
-                <xsl:element name="tei:persName">
+                <xsl:element name="persName">
                     <xsl:value-of select=".//tss:characteristic[@name = 'Recipient']"/>
                 </xsl:element>
             </xsl:element>
