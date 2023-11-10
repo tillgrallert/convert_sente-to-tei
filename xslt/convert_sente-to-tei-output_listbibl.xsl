@@ -4,7 +4,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-    version="2.0">
+    version="3.0">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
 
     <!-- this stylesheet produces a single TEI file containing a single listBibl with biblStruct children from a Sente XML -->
@@ -33,13 +33,21 @@
                 <xsl:element name="tei:text">
                     <xsl:element name="tei:body">
                         <xsl:element name="tei:listBibl">
-                            <xsl:apply-templates select="tss:reference">
+                            <xsl:for-each select="tss:reference">
                                 <!-- here one could select all sort of sorting criteria -->
-                                <!-- <xsl:sort select=".//tss:date[@type='Publication']"/> -->
+                                <xsl:sort select="number(descendant::tss:date[@type='Publication']/@year)" order="ascending"/>
+                                <xsl:sort select="number(descendant::tss:date[@type='Publication']/@month)" order="ascending"/>
+                                <xsl:sort select="number(descendant::tss:date[@type='Publication']/@day)" order="ascending"/>
                                 <!-- <xsl:sort select="./tss:author"/> -->
-                                <xsl:sort select=".//tss:characteristic[@name = 'publicationTitle']"/>
-                                <xsl:sort select=".//tss:characteristic[@name = 'volume']"/>
-                            </xsl:apply-templates>
+                                <xsl:sort select="descendant::tss:characteristic[@name = 'publicationTitle']"/>
+                                <xsl:sort select="descendant::tss:characteristic[@name = 'volume']"/>
+                                <xsl:call-template name="t_biblStruct">
+                                    <xsl:with-param name="p_input" select="."/>
+                                </xsl:call-template>
+                            </xsl:for-each>
+                            <!--<xsl:apply-templates select="tss:reference">
+                                
+                            </xsl:apply-templates>-->
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -47,11 +55,11 @@
         </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="tss:reference">
+    <!--<xsl:template match="tss:reference">
         <xsl:call-template name="t_biblStruct">
             <xsl:with-param name="p_input" select="."/>
         </xsl:call-template>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template name="t_teiHeader">
         <xsl:element name="tei:teiHeader">
