@@ -14,6 +14,51 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>../../OpenArabicPE/newspaper_al-muqtabas/metadata/muqtabas_1915-1916.TSS.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Sente2TEI: listBibl</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../../OpenArabicPE/newspaper_al-muqtabas/metadata/muqtabas.TSS.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Sente2TEI: listBibl</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../../OpenArabicPE/newspaper_al-muqtabas/metadata/eap119.TSS.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Sente2TEI: single file</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../../BachBibliothek/GitHub/ArabicTeiEdition/AbdAlNur1896/xml/AbdAlNur1896.Sente.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -300,6 +345,7 @@
         <folder masterFiles="true" name="Master Files">
             <file name="Sente2TeiXml/Sente2TeiXml%20templates%20v3c.xsl"/>
         </folder>
+        <folder path="../../OpenArabicPE/newspaper_al-muqtabas/"/>
         <folder path="examples/"/>
         <folder path="xslt/"/>
     </projectTree>
