@@ -41,30 +41,35 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="vFileName"
-            select="concat(replace($vRef,'/','-'),' uuid_',replace(.//tss:characteristic[@name='UUID'],'-','_'))"/>
-        <xsl:result-document href="output/{$vFileName}.TEIP5.xml">
-            <xsl:element name="tei:TEI">
-                <xsl:element name="tei:teiHeader">
-                    <xsl:element name="tei:fileDesc">
-                        <xsl:element name="tei:titleStmt">
-                            <xsl:element name="tei:title">
+        <xsl:variable name="v_uuid" select=".//tss:characteristic[@name='UUID']"/>
+        <xsl:variable name="v_file-name-output" select="$v_uuid"/>
+        <!--<xsl:variable name="v_file-name-output"
+            select="concat(replace($vRef,'/','-'),' uuid_',replace($v_uuid,'-','_'))"/>-->
+        <xsl:result-document href="_output/{$v_file-name-output}.TEIP5.xml">
+            <xsl:element name="TEI">
+                <xsl:element name="teiHeader">
+                    <xsl:element name="fileDesc">
+                        <xsl:element name="titleStmt">
+                            <xsl:element name="title">
                                 <!-- the current file name should be added here -->
                                 <!--<xsl:value-of select="$vRef"/>-->
+                                <xsl:variable name="v_citation">
                                 <xsl:call-template name="funcCitation">
                                     <xsl:with-param name="pRef" select="."/>
                                     <xsl:with-param name="pMode" select="'fn'"/>
                                     <xsl:with-param name="pOutputFormat" select="'tei'"/>
                                 </xsl:call-template>
+                                </xsl:variable>
+                                <xsl:value-of select="$v_citation"/>
                             </xsl:element>
                         </xsl:element>
                         <xsl:call-template name="t_editionStmt"/>
-                        <xsl:element name="tei:publicationStmt">
-                            <xsl:element name="tei:p">
+                        <xsl:element name="publicationStmt">
+                            <xsl:element name="p">
                                 <xsl:text>This should be replaced with some description</xsl:text>
                             </xsl:element>
                         </xsl:element>
-                        <xsl:element name="tei:sourceDesc">
+                        <xsl:element name="sourceDesc">
                             <!--<xsl:element name="p">
                              <xsl:value-of select=".//tss:publicationType/@name"/>
                          </xsl:element>-->
@@ -81,12 +86,12 @@
                     <xsl:call-template name="t_revisionDesc"/>
                 </xsl:element>
                 <xsl:call-template name="t_facsimile"/>
-                <xsl:element name="tei:text">
-                    <xsl:element name="tei:body">
+                <xsl:element name="text">
+                    <xsl:element name="body">
                        <!-- <xsl:call-template name="templAbstract"/>-->
                         <xsl:apply-templates select=".//tss:attachmentReference[1]" mode="m_attachment-to-pb"
                         />
-                        <xsl:element name="tei:div">
+                        <xsl:element name="div">
                             <xsl:attribute name="type" select="'item'"/>
                             <xsl:apply-templates select=".//tss:attachmentReference[position() gt 1]" mode="m_attachment-to-pb"
                             />
