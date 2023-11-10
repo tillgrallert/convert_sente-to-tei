@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="19.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="19.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -26,6 +26,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -39,6 +44,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -56,6 +66,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -69,6 +84,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -119,9 +139,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
@@ -206,9 +223,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -237,7 +251,32 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list/>
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>p_debug</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>false()</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -292,9 +331,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -341,7 +377,7 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="Sente2TeiXml.xpr">
+    <projectTree name="convert_sente-to-tei.xpr">
         <folder masterFiles="true" name="Master Files">
             <file name="Sente2TeiXml/Sente2TeiXml%20templates%20v3c.xsl"/>
         </folder>
